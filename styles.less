@@ -1,0 +1,36 @@
+@base-color: rgb(110, 27, 255);
+
+@distance: 60;
+@error-color: spin(@base-color, @distance);
+@info-color: spin(@base-color, @distance * -1);
+@warn-color: spin(@base-color, @distance * 2);
+@success-color: spin(@base-color, @distance * -2);
+
+.color {
+    &-primary {
+        background-color: @base-color;
+    }
+    
+    &-error {
+        background-color: @error-color;
+    }
+    
+    &-info {
+        background-color: @info-color;
+    }
+    
+    &-warning {
+        background-color: @warn-color;
+    }
+    
+    &-success {
+        background-color: @success-color;
+    }
+}
+
+.palette-item {
+    display: inline-block;
+    .color {
+        margin: 0.5em;
+    }
+}
