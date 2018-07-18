@@ -1,0 +1,60 @@
+.col {
+  margin: 0;
+  height: 1900px;
+  display: inline-block; }
+
+.col-left {
+  width: 35%;
+  float: left;
+  margin-left: 3.75%;
+  margin-right: 2.75%;
+  background-color: #9bf8ba; }
+
+.col-right {
+  width: 54%;
+  margin-left: 2.75%;
+  margin-right: 1.75%;
+  float: right;
+  background-color: #f6f893; }
+
+.logo {
+  height: 570px;
+  width: 100%;
+  background-color: #aff8ee;
+  text-align: center; }
+  .logo .name {
+    margin-top: 20px;
+    height: 1em;
+    font-size: 60px; }
+  .logo .surname {
+    height: 1em;
+    font-size: 64px;
+    font-weight: bold; }
+  .logo .graphic {
+    margin-top: 10px;
+    height: 1em;
+    font-size: 32px; }
+
+.education {
+  height: 790px;
+  width: 100%;
+  background-color: #f8afb3;
+  position: relative; }
+  .education .round {
+    position: absolute;
+    top: 77px;
+    left: 10px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 1px solid #2a1bfa;
+    background-color: #ffffff; }
+  .education .star {
+    position: absolute;
+    top: 48px;
+    left: 10px;
+    width: 73px;
+    height: 73px;
+    color: #2a1bfa;
+    background-color: #ffffff00;
+    font-size: 68pt; }

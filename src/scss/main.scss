@@ -1,0 +1,84 @@
+$base-color: rgb(42, 27, 250);
+
+$width-left: 35%;
+$width-right: 54%;
+$delta: 1%;
+$margin-cols: (100% - $width-right - $width-left) / 4;
+$margin-cols-end: 100% - $width-right - $width-left - ($margin-cols * 3);
+$error-color: rgb(248, 175, 179);
+$info-color: rgb(175, 248, 238);
+$warn-color: rgb(246, 248, 147);
+$success-color: rgb(155, 248, 186);
+
+.col {
+    margin: 0;
+    height: 1900px;
+    display: inline-block;
+  }
+  
+  .col-left {
+    width: $width-left;
+    float: left;
+    margin-left: $margin-cols + $delta;
+    margin-right: $margin-cols;
+    background-color: $success-color;
+  }
+  
+  .col-right {
+    width: $width-right;
+    margin-left: $margin-cols;
+    margin-right: $margin-cols-end - $delta;
+    float: right;
+    background-color: $warn-color;
+  }
+  
+  .logo {
+    height: 570px;
+    width: 100%;
+    background-color: $info-color;
+    text-align: center;
+    .name {
+        margin-top: 20px;
+        height: 1em;
+        font-size: 60px;
+    }
+    .surname {
+        height: 1em;
+        font-size: 64px;
+        font-weight: bold;
+    }
+    .graphic {
+        margin-top: 10px;
+        height: 1em;
+        font-size: 32px;
+    }
+  }
+  
+  .education {
+    // margin-top: 100px;
+    height: 790px;
+    width: 100%;
+    background-color: $error-color;
+    position: relative;
+
+    .round {
+        position: absolute;
+        top: 77px;
+        left: 10px;
+        width: 72px; 
+        height: 72px;
+        border-radius: 50%;
+        border: 1px solid $base-color;
+        background-color: #ffffff;
+    }
+    .star {
+        position: absolute;
+        top: 48px;
+        left: 10px;
+        width: 73px; 
+        height: 73px;
+        color: $base-color;
+        background-color: #ffffff00;
+        font-size: 68pt;
+    }
+  }
