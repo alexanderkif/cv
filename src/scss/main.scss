@@ -1,10 +1,31 @@
-$base-color: rgb(42, 27, 250);
+@font-face {
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('./fonts/MyriadPro-Regular.eot');
+	src: local('☺'), 
+		url('./fonts/MyriadPro-Regular.woff') format('woff'), 
+		url('./fonts/MyriadPro-Regular.ttf') format('truetype'), 
+		url('./fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'Conv_MyriadPro-Bold';
+	src: url('./fonts/MyriadPro-Bold.eot');
+	src: local('☺'), 
+		url('./fonts/MyriadPro-Bold.woff') format('woff'), 
+		url('./fonts/MyriadPro-Bold.ttf') format('truetype'), 
+		url('./fonts/MyriadPro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$base-color: #056cb4;
 $width-left: 35%;
 $width-right: 54%;
-$delta: 1%;
-$margin-cols: (100% - $width-right - $width-left) / 4;
-$margin-cols-end: 100% - $width-right - $width-left - ($margin-cols * 3);
+$margin-fix: 2%;
+$margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2;
+
 $error-color: rgb(248, 175, 179);
 $info-color: rgb(175, 248, 238);
 $warn-color: rgb(246, 248, 147);
@@ -19,15 +40,15 @@ $success-color: rgb(155, 248, 186);
   .col-left {
     width: $width-left;
     float: left;
-    margin-left: $margin-cols + $delta;
-    margin-right: $margin-cols;
+    margin-left: $margin-cols;
+    margin-right: $margin-fix;
     background-color: $success-color;
   }
   
   .col-right {
     width: $width-right;
-    margin-left: $margin-cols;
-    margin-right: $margin-cols-end - $delta;
+    margin-left: $margin-fix;
+    margin-right: $margin-cols;
     float: right;
     background-color: $warn-color;
   }
@@ -41,16 +62,27 @@ $success-color: rgb(155, 248, 186);
         margin-top: 20px;
         height: 1em;
         font-size: 60px;
+        font-family: 'Conv_MyriadPro-Regular';
+        letter-spacing: 2px;
+        filter: blur(1px);
     }
     .surname {
+        position: relative;
+        top: -5px;
         height: 1em;
-        font-size: 64px;
+        font-size: 66px;
         font-weight: bold;
+        font-family: 'Conv_MyriadPro-Bold';
+        letter-spacing: 3px;
+        background-color: #ffffff00;
     }
     .graphic {
-        margin-top: 10px;
+        margin-top: 15px;
         height: 1em;
-        font-size: 32px;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Conv_MyriadPro-Regular';
+        letter-spacing: 1px;
     }
   }
   
@@ -71,14 +103,23 @@ $success-color: rgb(155, 248, 186);
         border: 1px solid $base-color;
         background-color: #ffffff;
     }
+    .roundinn {
+        position: absolute;
+        top: 81px;
+        left: 14px;
+        width: 66px; 
+        height: 66px;
+        border-radius: 50%;
+        background-color: $base-color;
+    }
     .star {
         position: absolute;
-        top: 48px;
-        left: 10px;
+        top: 64px;
+        left: 18px;
         width: 73px; 
         height: 73px;
-        color: $base-color;
+        color: white;
         background-color: #ffffff00;
-        font-size: 68pt;
+        font-size: 50pt;
     }
   }
