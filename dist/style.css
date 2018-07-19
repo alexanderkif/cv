@@ -1,18 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Conv_MyriadPro-Regular';
-  src: url(fonts/MyriadPro-Regular.eot);
-  src: local("\263A"), url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg) format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_MyriadPro-Bold';
-  src: url(fonts/MyriadPro-Bold.eot);
-  src: local("\263A"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 .col {
   margin: 0;
   height: 1900px;
@@ -23,19 +9,19 @@
   float: left;
   margin-left: 3.5%;
   margin-right: 2%;
-  background-color: #9bf8ba; }
+  background-color: #ffe2e3; }
 
 .col-right {
   width: 54%;
   margin-left: 2%;
   margin-right: 3.5%;
   float: right;
-  background-color: #f6f893; }
+  background-color: #feffd1; }
 
 .logo {
-  height: 570px;
+  height: 590px;
   width: 100%;
-  background-color: #aff8ee;
+  background-color: #dafffa;
   text-align: center; }
   .logo .name {
     margin-top: 20px;
@@ -61,34 +47,107 @@
     font-family: 'Conv_MyriadPro-Regular';
     letter-spacing: 1px; }
 
-.education {
-  height: 790px;
+.profile {
+  margin-top: 30px;
+  height: 370px;
   width: 100%;
-  background-color: #f8afb3;
-  position: relative; }
-  .education .round {
-    position: absolute;
-    top: 77px;
-    left: 10px;
-    width: 72px;
-    height: 72px;
+  background-color: #dafffa; }
+
+.contact {
+  margin-top: 40px;
+  height: 330px;
+  width: 100%;
+  background-color: #dafffa; }
+
+.skills {
+  margin-top: 40px;
+  height: 470px;
+  width: 100%;
+  background-color: #dafffa; }
+
+.education {
+  margin-top: 75px;
+  height: 720px;
+  width: 100%;
+  background-color: #dafffa; }
+
+.experience {
+  margin-top: 35px;
+  height: 590px;
+  width: 100%;
+  background-color: #dafffa; }
+
+.software {
+  margin-top: 35px;
+  height: 420px;
+  width: 100%;
+  background-color: #dafffa; }
+
+.header1 {
+  width: 100%;
+  height: 78px;
+  display: table;
+  margin-left: 10px; }
+  .header1 .round {
+    display: table-cell;
+    position: relative;
+    margin-left: 10px;
+    width: 76px;
+    height: 76px;
+    min-width: 76px;
+    min-height: 76px;
     border-radius: 50%;
     border: 1px solid #056cb4;
     background-color: #ffffff; }
-  .education .roundinn {
-    position: absolute;
-    top: 81px;
-    left: 14px;
-    width: 66px;
-    height: 66px;
-    border-radius: 50%;
-    background-color: #056cb4; }
-  .education .star {
-    position: absolute;
-    top: 64px;
-    left: 18px;
-    width: 73px;
-    height: 73px;
-    color: white;
+    .header1 .round .roundinn {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #056cb4; }
+    .header1 .round .star {
+      position: absolute;
+      top: -13px;
+      left: 10px;
+      width: 70px;
+      height: 70px;
+      color: white;
+      background-color: #ffffff00;
+      font-size: 50pt; }
+      .header1 .round .star .icons-size {
+        font-size: 50px;
+        margin-top: 26px;
+        margin-left: 4px; }
+  .header1 .label {
+    width: 20px;
+    display: table-cell;
+    padding-left: 22px;
+    padding-top: 8px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Conv_MyriadPro-Bold';
     background-color: #ffffff00;
-    font-size: 50pt; }
+    color: #056cb4;
+    letter-spacing: 0px; }
+  .header1 .line {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 0px;
+    height: 15px;
+    border-top: 5px solid #056cb4; }
+
+@font-face {
+  font-family: 'Conv_MyriadPro-Regular';
+  src: url(fonts/MyriadPro-Regular.eot);
+  src: local("\263A"), url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_MyriadPro-Bold';
+  src: url(fonts/MyriadPro-Bold.eot);
+  src: local("\263A"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
