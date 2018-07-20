@@ -139,6 +139,7 @@
   margin-bottom: 44px; }
 
 .content {
+  width: 100%;
   margin-top: 15px;
   position: relative; }
   .content .point {
@@ -147,24 +148,27 @@
     left: 10px; }
     .content .point .icons-size {
       font-size: 28px; }
-  .content .subheader {
-    margin-left: 55px; }
-    .content .subheader .degree {
-      margin-top: 1px;
-      display: inline-block;
-      font-family: 'Conv_MyriadPro-Bold';
-      font-size: 30px;
-      color: #056cb4;
-      letter-spacing: 0px; }
-    .content .subheader .black {
-      color: black; }
-    .content .subheader .years {
-      display: inline-block;
-      margin-left: 10px;
-      font-family: 'Conv_MyriadPro-Regular';
-      font-size: 30px;
-      color: black;
-      letter-spacing: 0px; }
+  .content .subheader .degree {
+    margin-left: 55px;
+    margin-top: 1px;
+    display: inline-block;
+    font-family: 'Conv_MyriadPro-Bold';
+    font-size: 30px;
+    color: #056cb4;
+    letter-spacing: 0px; }
+  .content .subheader .black {
+    color: black; }
+  .content .subheader .years {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 30px;
+    color: black;
+    letter-spacing: 0px; }
+  .content .subheader .incontact {
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-left: 30px; }
   .content .uname {
     margin-left: 55px;
     font-family: 'Conv_MyriadPro-Regular';
@@ -177,8 +181,43 @@
     font-family: 'Conv_MyriadPro-Regular';
     font-size: 17px;
     color: black; }
-  .content .pofile {
+  .content .inprofile {
     margin: 0 30px; }
+  .content .inskills {
+    margin: 8px auto;
+    text-align: center;
+    font-size: 28px; }
+  .content .leftsoftware, .content .rightsoftware {
+    margin: 0;
+    display: inline-block;
+    width: 49%; }
+  .content .insoftware {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 28px; }
+  .content .bar {
+    margin: 20px;
+    display: table;
+    width: 90%;
+    height: 25px; }
+    .content .bar .blue {
+      display: table-cell;
+      background-color: #056cb4; }
+      .content .bar .blue1 {
+        width: 90%; }
+      .content .bar .blue2 {
+        width: 70%; }
+      .content .bar .blue3 {
+        width: 55%; }
+      .content .bar .blue4 {
+        width: 80%; }
+      .content .bar .blue5 {
+        width: 60%; }
+      .content .bar .blue6 {
+        width: 90%; }
+    .content .bar .grey {
+      display: table-cell;
+      background-color: lightgray; }
 
 @font-face {
   font-family: 'Conv_MyriadPro-Regular';
