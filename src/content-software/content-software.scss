@@ -1,0 +1,19 @@
+.insoftware {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 28px;
+}
+.bar {
+    margin: 20px;
+    display: table;
+    width: 90%;
+    height: 25px;
+    .blue {
+        display: table-cell;
+        background-color: #056cb4;
+    }
+    .grey {
+        display: table-cell;
+        background-color: lightgray;
+    }
+}

@@ -1,0 +1,32 @@
+
+.logo {
+    height: 590px;
+    width: 100%;
+    background-color: $info-color;
+    text-align: center;
+    .name {
+        margin-top: 20px;
+        height: 1em;
+        font-size: 60px;
+        font-family: 'Conv_MyriadPro-Regular';
+        letter-spacing: 2px;
+        filter: blur(1px);
+    }
+    .surname {
+        position: relative;
+        top: -5px;
+        height: 1em;
+        font-size: 66px;
+        font-weight: bold;
+        font-family: 'Conv_MyriadPro-Bold';
+        letter-spacing: 3px;
+        background-color: #ffffff00;
+    }
+    .graphic {
+        margin-top: 15px;
+        height: 1em;
+        font-size: 26px;
+        font-family: 'Conv_MyriadPro-Bold';
+        letter-spacing: 1px;
+    }
+  }

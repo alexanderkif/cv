@@ -138,7 +138,9 @@
 .content {
   width: 100%;
   margin-top: 15px;
-  position: relative; }
+  position: relative;
+  font-family: 'Conv_MyriadPro-Regular';
+  font-size: 17px; }
   .content .point {
     position: absolute;
     top: 7px;
@@ -180,10 +182,16 @@
     color: black; }
   .content .inprofile {
     margin: 0 30px; }
+    .content .inprofile b {
+      font-family: 'Conv_MyriadPro-Bold'; }
   .content .inskills {
     margin: 8px auto;
     text-align: center;
     font-size: 28px; }
+  .content .lens-active {
+    color: #056cb4; }
+  .content .lens-gray {
+    color: lightgray; }
   .content .leftsoftware, .content .rightsoftware {
     margin: 0;
     display: inline-block;
@@ -200,18 +208,6 @@
     .content .bar .blue {
       display: table-cell;
       background-color: #056cb4; }
-      .content .bar .blue1 {
-        width: 90%; }
-      .content .bar .blue2 {
-        width: 70%; }
-      .content .bar .blue3 {
-        width: 55%; }
-      .content .bar .blue4 {
-        width: 80%; }
-      .content .bar .blue5 {
-        width: 60%; }
-      .content .bar .blue6 {
-        width: 90%; }
     .content .bar .grey {
       display: table-cell;
       background-color: lightgray; }

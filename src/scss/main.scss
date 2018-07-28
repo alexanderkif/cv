@@ -1,5 +1,9 @@
 
 $base-color: #056cb4;
+$error-color: white;
+$info-color: white;
+$warn-color: white;
+$success-color: white;
 $width-left: 36%;
 $width-right: 54%;
 $margin-fix: 1%;
@@ -10,10 +14,6 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2;
 // $warn-color: rgb(254, 255, 209);
 // $success-color: rgb(219, 255, 231);
 
-$error-color: white;
-$info-color: white;
-$warn-color: white;
-$success-color: white;
 
 .col {
     margin: 0;
@@ -37,138 +37,42 @@ $success-color: white;
     background-color: $warn-color;
   }
   
-  .logo {
-    height: 590px;
-    width: 100%;
-    background-color: $info-color;
-    text-align: center;
-    .name {
-        margin-top: 20px;
-        height: 1em;
-        font-size: 60px;
-        font-family: 'Conv_MyriadPro-Regular';
-        letter-spacing: 2px;
-        filter: blur(1px);
-    }
-    .surname {
-        position: relative;
-        top: -5px;
-        height: 1em;
-        font-size: 66px;
-        font-weight: bold;
-        font-family: 'Conv_MyriadPro-Bold';
-        letter-spacing: 3px;
-        background-color: #ffffff00;
-    }
-    .graphic {
-        margin-top: 15px;
-        height: 1em;
-        font-size: 26px;
-        font-family: 'Conv_MyriadPro-Bold';
-        letter-spacing: 1px;
-    }
-  }
+  @import "../logo/logo";
   
   .profile {
     margin-top: 44px;
-    // height: 375px;
     width: 100%;
     background-color: $info-color;
   }
   .contact {
     margin-top: 40px;
-    // height: 330px;
     width: 100%;
     background-color: $info-color;
   }
   .skills {
     margin-top: 40px;
-    // height: 470px;
     width: 100%;
     background-color: $info-color;
   }
   
   .education {
     margin-top: 77px;
-    // height: 735px;
     width: 100%;
     background-color: $info-color;
   }
   .experience {
     margin-top: 35px;
-    // height: 590px;
     width: 100%;
     background-color: $info-color;
   }
   .software {
     margin-top: 35px;
-    // height: 420px;
     width: 100%;
     background-color: $info-color;
   }
   
-  .header1 {
-    width: 100%;
-    height: 78px;
-    display: table;
-    margin-left: 10px;
-    margin-bottom: 28px;
-    .round {
-        display: table-cell;
-        position: relative;
-        margin-left: 10px;
-        width: 76px;
-        height: 76px;
-        min-width: 76px;
-        min-height: 76px;
-        border-radius: 50%;
-        border: 1px solid $base-color;
-        background-color: #ffffff;
-        .roundinn {
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 70px; 
-            height: 70px;
-            border-radius: 50%;
-            background-color: $base-color;
-        }
-        .star {
-            position: absolute;
-            top: -13px;
-            left: 10px;
-            width: 70px; 
-            height: 70px;
-            color: white;
-            background-color: #ffffff00;
-            font-size: 50pt;
-            .icons-size {
-                font-size: 50px; 
-                margin-top: 26px; 
-                margin-left: 4px;
-              }
-        }
-    }    
-    .label {
-        width: 20px;
-        display: table-cell;
-        padding-left: 22px;
-        padding-top: 8px;
-        font-size: 45px;
-        font-weight: bold;
-        font-family: 'Conv_MyriadPro-Bold';
-        background-color: #ffffff00;
-        color: $base-color;
-        letter-spacing: 0px;
-    }
-    .line {
-        margin-left: 10px;
-        margin-right: 20px;
-        margin-top: 0px;
-        height: 15px;
-        border-top: 5px solid $base-color;
-    }
-}
+  @import "../block-header/block-header";
+  
 .experience > .header1 {
     margin-bottom: 44px;
 }
@@ -177,6 +81,8 @@ $success-color: white;
     width: 100%;
     margin-top: 15px;
     position: relative;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 17px;
     .point {
         position: absolute;
         top: 7px;
@@ -195,9 +101,9 @@ $success-color: white;
             color: $base-color;
             letter-spacing: 0px;
         }
-        .black {
-            color: black;
-        }
+
+        @import "../content-experience/content-experience";
+        
         .years {
             display: inline-block;
             margin-left: 10px;
@@ -206,11 +112,9 @@ $success-color: white;
             color: black;
             letter-spacing: 0px;
         }
-        .incontact {
-            font-size: 24px;
-            margin-bottom: 25px;
-            margin-left: 30px;
-        }
+
+        @import "../content-contact/content-contact";
+        
     }
     .uname {
         margin-left: 55px;
@@ -226,58 +130,19 @@ $success-color: white;
         font-size: 17px;
         color: black;
     }
-    .inprofile {
-        margin: 0 30px;
-    }
-    .inskills {
-      margin: 8px auto;
-      text-align: center;
-      font-size: 28px;
-    }
+
+    @import "../content-profile/content-profile";
+    
+    @import "../content-skills/content-skills";
+
     .leftsoftware, .rightsoftware {
       margin: 0;
       display: inline-block;
       width: 49%;
     }
-    .insoftware {
-      margin-left: 20px;
-      text-align: left;
-      font-size: 28px;
-    }
-    .bar {
-      margin: 20px;
-      display: table;
-      width: 90%;
-      height: 25px;
-      .blue {
-        display: table-cell;
-        background-color: #056cb4;
-        &1 {
-          width: 90%;
-        }
-        &2 {
-          width: 70%;
-        }
-        &3 {
-          width: 55%;
-        }
-        &4 {
-          width: 80%;
-        }
-        &5 {
-          width: 60%;
-        }
-        &6 {
-          width: 90%;
-        }
-      }
-      .grey {
-        display: table-cell;
-        background-color: lightgray;
-        // width: 100%;
-        // height: 30px;
-      }
-    }
+
+    @import "../content-software/content-software";
+
 }
 
 @font-face {

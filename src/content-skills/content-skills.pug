@@ -1,0 +1,8 @@
+mixin content-skills(label, count)
+    .uname.inskills= label
+    .uname.inskills
+        - for (var x = 0; x < 12; x++)
+            if x < count
+                i(class="material-icons icons-size lens-active")= 'lens'
+            else
+                i(class="material-icons icons-size lens-gray")= 'lens'
