@@ -29,7 +29,8 @@ body {
   height: 590px;
   width: 100%;
   background-color: white;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   .logo .name {
     margin-top: 20px;
     height: 1em;

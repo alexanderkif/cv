@@ -7,6 +7,11 @@ include ./content-education/content-education
 include ./content-experience/content-experience
 include ./content-software/content-software
 
+- var logoObj= {}
+- logoObj.name= 'name here'
+- logoObj.surname= 'surname'
+- logoObj.graphic= 'graphic designer'
+
 html
   head
     meta(charset='UTF-8')
@@ -14,13 +19,14 @@ html
     link(rel="stylesheet" href="style.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   body
-    .col.col-left
-      +logo
-      +profile
-      +contact
-      +skills
-    .col.col-right
-      +education
-      +experience
-      +software
+    .col
+      .col-left
+        +logo(logoObj)
+        +profile
+        +contact
+        +skills
+      .col-right
+        +education
+        +experience
+        +software
     script(src="main.js")

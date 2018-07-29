@@ -1,8 +1,8 @@
-mixin logo
+mixin logo(logoObj)
     .logo
         svg(height="350" width="100%")
             circle(class="img1-logo" r="130" cx="51%" cy="217" stroke="#056cb4" stroke-width="1" fill="white")
             circle(class="img1-logo" r="114" cx="51%" cy="217" fill="#056cb4")
-        div(class="logo name")= 'NAME HERE'
-        div(class="logo surname")= 'SURNAME'
-        div(class="logo graphic")= 'GRAPHIC DESIGNER'
+        div(class="logo name")= logoObj.name
+        div(class="logo surname")= logoObj.surname
+        div(class="logo graphic")= logoObj.graphic
