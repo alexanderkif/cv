@@ -1,3 +1,8 @@
+.software {
+    margin-top: 65px;
+    width: 100%;
+    background-color: $info-color;
+}
 .insoftware {
     margin-left: 20px;
     text-align: left;
@@ -16,4 +21,10 @@
         display: table-cell;
         background-color: lightgray;
     }
+}
+
+.leftsoftware, .rightsoftware {
+    margin: 0;
+    display: inline-block;
+    width: 49%;
 }

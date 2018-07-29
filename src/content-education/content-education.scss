@@ -1,0 +1,51 @@
+.education {
+    margin-top: 77px;
+    width: 100%;
+    background-color: $info-color;
+}
+.content {
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    .point {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        .icons-size {
+            font-size: 28px; 
+        }
+    }
+    .subheader {
+        .degree {
+          margin-left: 55px;
+            margin-top: 1px;
+            display: inline-block;
+            font-family: 'Conv_MyriadPro-Bold';
+            font-size: 30px;
+            color: $base-color;
+            letter-spacing: 0px;
+        }
+        .years {
+            display: inline-block;
+            margin-left: 10px;
+            font-family: 'Conv_MyriadPro-Regular';
+            font-size: 30px;
+            color: black;
+            letter-spacing: 0px;
+        }
+    }
+    .uname {
+        margin-left: 55px;
+        font-family: 'Conv_MyriadPro-Regular';
+        font-size: 30px;
+        color: black;
+        letter-spacing: 0px;
+    }
+    .text {
+        margin-left: 55px;
+        margin-top: 5px;
+        font-family: 'Conv_MyriadPro-Regular';
+        font-size: 17px;
+        color: black;
+    }    
+}

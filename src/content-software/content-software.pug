@@ -3,3 +3,16 @@ mixin content-software(label, percent)
     .bar
         div(class="blue" style="width: "+percent)
         .grey
+
+mixin software
+    .software
+        +block-header('computer', 'SOFTWARE')
+        .content
+          .leftsoftware
+            +content-software('PHOTOSHOP', '90%')
+            +content-software('ILLUSTRATOR', '70%')
+            +content-software('INDIESIGN', '55%')
+          .rightsoftware
+            +content-software('DREAMWEAVER', '80%')
+            +content-software('AFTER EFFECTS', '60%')
+            +content-software('HTML&CSS3', '90%')

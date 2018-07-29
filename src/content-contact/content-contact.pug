@@ -1,4 +1,13 @@
 mixin content-contact(label, value)
-    .subheader
-        .degree.incontact= label
-        .years.incontact= value
+        .incontact
+            .name= label
+            .value= value
+
+mixin contact
+    .contact
+        +block-header('call', 'CONTACT')
+        .content
+            +content-contact('ADDRESS', 'Main Street, City.')
+            +content-contact('EMAIL', 'contact@domain.com')
+            +content-contact('PHONE', '555-555-555')
+            +content-contact('WEBSITE', 'www.yourweb.com')

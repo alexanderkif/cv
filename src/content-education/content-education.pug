@@ -1,8 +1,17 @@
 mixin content-education(degree, years, uname, text)
-    .point
-        i(class="material-icons icons-size")= lens
-    .subheader
-        .degree= degree
-        .years= years
-    .uname= uname
-    .text= text
+    .content
+        .point
+            i(class="material-icons icons-size")= 'lens'
+        .subheader
+            .degree= degree
+            .years= years
+        .uname= uname
+        .text= text
+
+mixin education
+    .education
+        +block-header('star', 'EDUCATION')
+        +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')

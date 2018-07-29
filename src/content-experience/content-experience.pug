@@ -1,8 +1,16 @@
-mixin content-experience(degree, years, uname, text)
-    .point
-        i(class="material-icons icons-size")= lens
-    .subheader
-        .degree.black= degree
-        .years= years
-    .uname= uname
-    .text= text
+mixin content-experience(compname, expyears, ujh, exptext)
+    .content
+        .point
+            i(class="material-icons icons-size")= 'lens'
+        .subheader
+            .compname= compname
+            .expyears= expyears
+        .ujh= ujh
+        .exptext= exptext
+
+mixin experience
+    .experience
+        +block-header('work', 'EXPERIENCE')
+        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')

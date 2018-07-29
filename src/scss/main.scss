@@ -7,143 +7,55 @@ $success-color: white;
 $width-left: 36%;
 $width-right: 54%;
 $margin-fix: 1%;
-$margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2;
+$margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
 // $error-color: rgb(255, 226, 227);
 // $info-color: rgb(218, 255, 250);
 // $warn-color: rgb(254, 255, 209);
 // $success-color: rgb(219, 255, 231);
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .col {
-    margin: 0;
-    height: 1900px;
-    display: inline-block;
-  }
-  
-  .col-left {
-    width: $width-left;
-    float: left;
-    margin-left: $margin-cols;
-    margin-right: $margin-fix;
-    background-color: $error-color;
-  }
-  
-  .col-right {
-    width: $width-right;
-    margin-left: $margin-fix;
-    margin-right: $margin-cols;
-    float: right;
-    background-color: $warn-color;
-  }
-  
-  @import "../logo/logo";
-  
-  .profile {
-    margin-top: 44px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  .contact {
-    margin-top: 40px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  .skills {
-    margin-top: 40px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  
-  .education {
-    margin-top: 77px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  .experience {
-    margin-top: 35px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  .software {
-    margin-top: 35px;
-    width: 100%;
-    background-color: $info-color;
-  }
-  
-  @import "../block-header/block-header";
-  
-.experience > .header1 {
-    margin-bottom: 44px;
+  margin: 0;
+  // height: 1900px;
+  display: inline-block;
+  font-family: 'Conv_MyriadPro-Regular';
+  font-size: 17px;
+  margin-bottom: 50px;
 }
 
-.content {
-    width: 100%;
-    margin-top: 15px;
-    position: relative;
-    font-family: 'Conv_MyriadPro-Regular';
-    font-size: 17px;
-    .point {
-        position: absolute;
-        top: 7px;
-        left: 10px;
-        .icons-size {
-            font-size: 28px; 
-        }
-    }
-    .subheader {
-        .degree {
-          margin-left: 55px;
-            margin-top: 1px;
-            display: inline-block;
-            font-family: 'Conv_MyriadPro-Bold';
-            font-size: 30px;
-            color: $base-color;
-            letter-spacing: 0px;
-        }
-
-        @import "../content-experience/content-experience";
-        
-        .years {
-            display: inline-block;
-            margin-left: 10px;
-            font-family: 'Conv_MyriadPro-Regular';
-            font-size: 30px;
-            color: black;
-            letter-spacing: 0px;
-        }
-
-        @import "../content-contact/content-contact";
-        
-    }
-    .uname {
-        margin-left: 55px;
-        font-family: 'Conv_MyriadPro-Regular';
-        font-size: 30px;
-        color: black;
-        letter-spacing: 0px;
-    }
-    .text {
-        margin-left: 55px;
-        margin-top: 5px;
-        font-family: 'Conv_MyriadPro-Regular';
-        font-size: 17px;
-        color: black;
-    }
-
-    @import "../content-profile/content-profile";
-    
-    @import "../content-skills/content-skills";
-
-    .leftsoftware, .rightsoftware {
-      margin: 0;
-      display: inline-block;
-      width: 49%;
-    }
-
-    @import "../content-software/content-software";
-
+.col-left {
+  width: $width-left;
+  float: left;
+  margin-left: $margin-cols;
+  margin-right: $margin-fix;
+  background-color: $error-color;
 }
+
+.col-right {
+  width: $width-right;
+  margin-left: $margin-fix;
+  margin-right: $margin-cols;
+  float: right;
+  background-color: $warn-color;
+  min-width: 570px;
+}
+
+@import "../logo/logo";
+@import "../block-header/block-header";
+@import "../content-profile/content-profile";
+@import "../content-contact/content-contact";
+@import "../content-skills/content-skills";
+@import "../content-education/content-education";
+@import "../content-experience/content-experience";
+@import "../content-software/content-software";
+
+
+
 
 @font-face {
     font-family: 'Conv_MyriadPro-Regular';

@@ -1,7 +1,19 @@
 
+.profile {
+    margin-top: 44px;
+    width: 100%;
+    background-color: $info-color;
+}
+
 .inprofile {
-    margin: 0 30px;
-    b {    
-        font-family: 'Conv_MyriadPro-Bold';
-    }
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 17px;
+    margin: 0 15px;
+}
+
+b {    
+    font-family: 'Conv_MyriadPro-Bold';
 }

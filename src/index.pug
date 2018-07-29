@@ -16,48 +16,11 @@ html
   body
     .col.col-left
       +logo
-      .profile
-        +block-header('person', 'PROFILE')
-        .content
-          +content-profile
-           span Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <b> pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</b>
-      .contact
-        +block-header('call', 'CONTACT')
-        .content
-          +content-contact('ADDEESS', 'Main Street, City.')
-          +content-contact('EMAIL', 'contact@domain.com')
-          +content-contact('PHONE', '555-555-555')
-          +content-contact('WEBSITE', 'www.yourweb.com')
-      .skills
-        +block-header('build', 'SKILLS')
-        .content
-          +content-skills('CREATIVE', 9)
-          +content-skills('TEAMWORK', 11)
-          +content-skills('INNOVATE', 6)
-          +content-skills('COMMUNICATION', 11)
+      +profile
+      +contact
+      +skills
     .col.col-right
-      .education
-        +block-header('star', 'EDUCATION')
-        .content
-          +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-          +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-          +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-          +content-education('MASTER DEGREE', '// Feb 2011 - Jun 2014', 'UNIVERSITY NAME', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-      .experience
-        +block-header('work', 'EXPERIENCE')
-        .content
-          +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-          +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-          +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-      .software
-        +block-header('computer', 'SOFTWARE')
-        .content
-          .leftsoftware
-            +content-software('PHOTOSHOP', '90%')
-            +content-software('ILLUSTRATOR', '70%')
-            +content-software('INDIESIGN', '55%')
-          .rightsoftware
-            +content-software('DREAMWEAVER', '80%')
-            +content-software('AFTER EFFECTS', '60%')
-            +content-software('HTML&CSS3', '90%')
+      +education
+      +experience
+      +software
     script(src="main.js")

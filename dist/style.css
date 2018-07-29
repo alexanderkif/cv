@@ -1,22 +1,29 @@
 @charset "UTF-8";
+body {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .col {
   margin: 0;
-  height: 1900px;
-  display: inline-block; }
+  display: inline-block;
+  font-family: 'Conv_MyriadPro-Regular';
+  font-size: 17px;
+  margin-bottom: 50px; }
 
 .col-left {
   width: 36%;
   float: left;
-  margin-left: 4%;
+  margin-left: 4% -1;
   margin-right: 1%;
   background-color: white; }
 
 .col-right {
   width: 54%;
   margin-left: 1%;
-  margin-right: 4%;
+  margin-right: 4% -1;
   float: right;
-  background-color: white; }
+  background-color: white;
+  min-width: 570px; }
 
 .logo {
   height: 590px;
@@ -46,41 +53,12 @@
     font-family: 'Conv_MyriadPro-Bold';
     letter-spacing: 1px; }
 
-.profile {
-  margin-top: 44px;
-  width: 100%;
-  background-color: white; }
-
-.contact {
-  margin-top: 40px;
-  width: 100%;
-  background-color: white; }
-
-.skills {
-  margin-top: 40px;
-  width: 100%;
-  background-color: white; }
-
-.education {
-  margin-top: 77px;
-  width: 100%;
-  background-color: white; }
-
-.experience {
-  margin-top: 35px;
-  width: 100%;
-  background-color: white; }
-
-.software {
-  margin-top: 35px;
-  width: 100%;
-  background-color: white; }
-
 .header1 {
   width: 100%;
   height: 78px;
   display: table;
   margin-left: 10px;
+  margin-top: 35px;
   margin-bottom: 28px; }
   .header1 .round {
     display: table-cell;
@@ -132,15 +110,92 @@
     height: 15px;
     border-top: 5px solid #056cb4; }
 
-.experience > .header1 {
-  margin-bottom: 44px; }
+.profile {
+  margin-top: 44px;
+  width: 100%;
+  background-color: white; }
 
-.content {
+.inprofile {
   width: 100%;
   margin-top: 15px;
   position: relative;
   font-family: 'Conv_MyriadPro-Regular';
-  font-size: 17px; }
+  font-size: 17px;
+  margin: 0 15px; }
+
+b {
+  font-family: 'Conv_MyriadPro-Bold'; }
+
+.contact {
+  margin-top: 40px;
+  width: 100%;
+  background-color: white; }
+
+.content {
+  width: 100%;
+  margin-top: 15px;
+  position: relative; }
+  .content .incontact {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-left: 15px; }
+  .content .name {
+    margin-left: 0px;
+    margin-top: 1px;
+    display: inline-block;
+    font-family: 'Conv_MyriadPro-Bold';
+    color: #056cb4;
+    letter-spacing: 0px; }
+  .content .value {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Conv_MyriadPro-Regular';
+    color: black;
+    letter-spacing: 0px; }
+
+.skills {
+  margin-top: 60px;
+  width: 100%;
+  background-color: white; }
+  .skills .content-skills {
+    width: 100%;
+    margin-top: 15px;
+    position: relative; }
+    .skills .content-skills .uname {
+      margin-left: 40px;
+      font-family: 'Conv_MyriadPro-Regular';
+      font-size: 30px;
+      color: black;
+      letter-spacing: 0px; }
+  .skills .inskills {
+    margin: 8px auto;
+    text-align: center;
+    font-size: 28px;
+    min-width: 340px; }
+  .skills .skill {
+    margin: 8px auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px; }
+
+.lens-active {
+  color: #056cb4;
+  margin: 0px 2px; }
+
+.lens-gray {
+  color: lightgray;
+  margin: 0px 2px; }
+
+.education {
+  margin-top: 77px;
+  width: 100%;
+  background-color: white; }
+
+.content {
+  width: 100%;
+  margin-top: 15px;
+  position: relative; }
   .content .point {
     position: absolute;
     top: 7px;
@@ -155,8 +210,6 @@
     font-size: 30px;
     color: #056cb4;
     letter-spacing: 0px; }
-  .content .subheader .black {
-    color: black; }
   .content .subheader .years {
     display: inline-block;
     margin-left: 10px;
@@ -164,10 +217,6 @@
     font-size: 30px;
     color: black;
     letter-spacing: 0px; }
-  .content .subheader .incontact {
-    font-size: 24px;
-    margin-bottom: 25px;
-    margin-left: 30px; }
   .content .uname {
     margin-left: 55px;
     font-family: 'Conv_MyriadPro-Regular';
@@ -180,37 +229,79 @@
     font-family: 'Conv_MyriadPro-Regular';
     font-size: 17px;
     color: black; }
-  .content .inprofile {
-    margin: 0 30px; }
-    .content .inprofile b {
-      font-family: 'Conv_MyriadPro-Bold'; }
-  .content .inskills {
-    margin: 8px auto;
-    text-align: center;
-    font-size: 28px; }
-  .content .lens-active {
-    color: #056cb4; }
-  .content .lens-gray {
-    color: lightgray; }
-  .content .leftsoftware, .content .rightsoftware {
-    margin: 0;
+
+.experience {
+  margin-top: 65px;
+  width: 100%;
+  background-color: white; }
+
+.content {
+  width: 100%;
+  margin-top: 15px;
+  position: relative; }
+  .content .point {
+    position: absolute;
+    top: 7px;
+    left: 10px; }
+    .content .point .icons-size {
+      font-size: 28px; }
+  .content .subheader .compname {
+    margin-left: 55px;
+    margin-top: 1px;
     display: inline-block;
-    width: 49%; }
-  .content .insoftware {
-    margin-left: 20px;
-    text-align: left;
-    font-size: 28px; }
-  .content .bar {
-    margin: 20px;
-    display: table;
-    width: 90%;
-    height: 25px; }
-    .content .bar .blue {
-      display: table-cell;
-      background-color: #056cb4; }
-    .content .bar .grey {
-      display: table-cell;
-      background-color: lightgray; }
+    font-family: 'Conv_MyriadPro-Bold';
+    font-size: 30px;
+    color: black;
+    letter-spacing: 0px; }
+  .content .subheader .expyears {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 30px;
+    color: black;
+    letter-spacing: 0px; }
+  .content .ujh {
+    margin-left: 55px;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 30px;
+    color: black;
+    letter-spacing: 0px; }
+  .content .exptext {
+    margin-left: 55px;
+    margin-top: 5px;
+    font-family: 'Conv_MyriadPro-Regular';
+    font-size: 17px;
+    color: black; }
+
+.experience > .header1 {
+  margin-bottom: 44px; }
+
+.software {
+  margin-top: 65px;
+  width: 100%;
+  background-color: white; }
+
+.insoftware {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 28px; }
+
+.bar {
+  margin: 20px;
+  display: table;
+  width: 90%;
+  height: 25px; }
+  .bar .blue {
+    display: table-cell;
+    background-color: #056cb4; }
+  .bar .grey {
+    display: table-cell;
+    background-color: lightgray; }
+
+.leftsoftware, .rightsoftware {
+  margin: 0;
+  display: inline-block;
+  width: 49%; }
 
 @font-face {
   font-family: 'Conv_MyriadPro-Regular';
