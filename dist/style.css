@@ -103,7 +103,8 @@ body {
     font-family: 'Conv_MyriadPro-Bold';
     background-color: #ffffff00;
     color: #056cb4;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .header1 .line {
     margin-left: 10px;
     margin-right: 20px;
@@ -116,15 +117,17 @@ body {
   width: 100%;
   background-color: white; }
 
-.inprofile {
-  width: 100%;
-  margin-top: 15px;
+.procontent {
+  margin: 0px 15px;
   position: relative;
-  font-family: 'Conv_MyriadPro-Regular';
-  font-size: 17px;
-  margin: 0 15px; }
+  font-size: 17px; }
 
-b {
+.inprofile {
+  display: inline;
+  font-family: 'Conv_MyriadPro-Regular'; }
+
+.b {
+  display: inline;
   font-family: 'Conv_MyriadPro-Bold'; }
 
 .contact {
@@ -147,7 +150,8 @@ b {
     display: inline-block;
     font-family: 'Conv_MyriadPro-Bold';
     color: #056cb4;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .content .value {
     display: inline-block;
     margin-left: 10px;
@@ -178,7 +182,8 @@ b {
     margin: 8px auto;
     margin-top: 20px;
     text-align: center;
-    font-size: 28px; }
+    font-size: 28px;
+    text-transform: uppercase; }
 
 .lens-active {
   color: #056cb4;
@@ -210,7 +215,8 @@ b {
     font-family: 'Conv_MyriadPro-Bold';
     font-size: 30px;
     color: #056cb4;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .content .subheader .years {
     display: inline-block;
     margin-left: 10px;
@@ -223,7 +229,8 @@ b {
     font-family: 'Conv_MyriadPro-Regular';
     font-size: 30px;
     color: black;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .content .text {
     margin-left: 55px;
     margin-top: 5px;
@@ -253,7 +260,8 @@ b {
     font-family: 'Conv_MyriadPro-Bold';
     font-size: 30px;
     color: black;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .content .subheader .expyears {
     display: inline-block;
     margin-left: 10px;
@@ -266,7 +274,8 @@ b {
     font-family: 'Conv_MyriadPro-Regular';
     font-size: 30px;
     color: black;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-transform: uppercase; }
   .content .exptext {
     margin-left: 55px;
     margin-top: 5px;
@@ -285,7 +294,8 @@ b {
 .insoftware {
   margin-left: 20px;
   text-align: left;
-  font-size: 28px; }
+  font-size: 28px;
+  text-transform: uppercase; }
 
 .bar {
   margin: 20px;

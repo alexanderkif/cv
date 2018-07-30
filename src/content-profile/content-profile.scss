@@ -4,16 +4,16 @@
     width: 100%;
     background-color: $info-color;
 }
-
-.inprofile {
-    width: 100%;
-    margin-top: 15px;
+.procontent {
+    margin: 0px 15px;
     position: relative;
-    font-family: 'Conv_MyriadPro-Regular';
     font-size: 17px;
-    margin: 0 15px;
 }
-
-b {    
+.inprofile {
+    display: inline;
+    font-family: 'Conv_MyriadPro-Regular';
+}
+.b {    
+    display: inline;
     font-family: 'Conv_MyriadPro-Bold';
 }

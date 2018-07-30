@@ -1,18 +1,16 @@
-mixin content-software(label, percent)
-    .uname.insoftware= label
+mixin content-software(soft)
+    .uname.insoftware= soft[0]
     .bar
-        div(class="blue" style="width: "+percent)
+        div(class="blue" style="width: "+soft[1])
         .grey
 
-mixin software
+mixin software(software)
     .software
-        +block-header('computer', 'SOFTWARE')
+        +block-header(software.icon, software.header)
         .content
           .leftsoftware
-            +content-software('PHOTOSHOP', '90%')
-            +content-software('ILLUSTRATOR', '70%')
-            +content-software('INDIESIGN', '55%')
+            each soft in software.leftList
+              +content-software(soft)
           .rightsoftware
-            +content-software('DREAMWEAVER', '80%')
-            +content-software('AFTER EFFECTS', '60%')
-            +content-software('HTML&CSS3', '90%')
+            each soft in software.rightList
+              +content-software(soft)

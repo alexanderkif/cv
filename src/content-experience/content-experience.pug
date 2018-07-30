@@ -1,16 +1,13 @@
-mixin content-experience(compname, expyears, ujh, exptext)
-    .content
-        .point
-            i(class="material-icons icons-size")= 'lens'
-        .subheader
-            .compname= compname
-            .expyears= expyears
-        .ujh= ujh
-        .exptext= exptext
 
-mixin experience
+mixin experience(experience)
     .experience
-        +block-header('work', 'EXPERIENCE')
-        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
-        +content-experience('COMPANY NAME', '// Feb 2011 - Jun 2014', 'YOUR JOB HERE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.')
+        +block-header(experience.icon, experience.header)
+        each exp in experience.expList
+            .content
+                .point
+                    i(class="material-icons icons-size")= 'lens'
+                .subheader
+                    .compname= exp[0]
+                    .expyears= exp[1]
+                .ujh= exp[2]
+                .exptext= exp[3]

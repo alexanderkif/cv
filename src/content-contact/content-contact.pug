@@ -1,13 +1,9 @@
-mixin content-contact(label, value)
-        .incontact
-            .name= label
-            .value= value
 
-mixin contact
+mixin contact(contact)
     .contact
-        +block-header('call', 'CONTACT')
+        +block-header(contact.icon, contact.header)
         .content
-            +content-contact('ADDRESS', 'Main Street, City.')
-            +content-contact('EMAIL', 'contact@domain.com')
-            +content-contact('PHONE', '555-555-555')
-            +content-contact('WEBSITE', 'www.yourweb.com')
+            each cont in contact.contacts
+                .incontact
+                    .name= cont[0]
+                    .value= cont[1]

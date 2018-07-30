@@ -1,17 +1,13 @@
-mixin content-skills(label, count)
-    .uname.skill= label
-    .uname.inskills
-        - for (var x = 0; x < 12; x++)
-            if x < count
-                i(class="material-icons icons-size lens-active")= 'lens'
-            else
-                i(class="material-icons icons-size lens-gray")= 'lens'
 
-mixin skills
+mixin skills(skills)
     .skills
-        +block-header('build', 'SKILLS')
+        +block-header(skills.icon, skills.header)
         .content-skills
-            +content-skills('CREATIVE', 9)
-            +content-skills('TEAMWORK', 11)
-            +content-skills('INNOVATE', 6)
-            +content-skills('COMMUNICATION', 11)
+            each skill in skills.skillsList
+                .uname.skill= skill[0]
+                .uname.inskills
+                    - for (var x = 0; x < 12; x++)
+                        if x < skill[1]
+                            i(class="material-icons icons-size lens-active")= 'lens'
+                        else
+                            i(class="material-icons icons-size lens-gray")= 'lens'
