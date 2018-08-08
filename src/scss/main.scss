@@ -15,7 +15,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 // $success-color: rgb(219, 255, 231);
 
 body {
-  max-width: 1200px;
+  min-width: 1010px;
   margin: 0 auto;
 }
 
