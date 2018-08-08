@@ -1,14 +1,13 @@
 @charset "UTF-8";
-body {
-  min-width: 1010px;
-  margin: 0 auto; }
-
 .col {
   margin: 0;
-  display: inline-block;
+  min-width: 1010px;
+  max-width: 1200px;
+  display: block;
   font-family: 'Conv_MyriadPro-Regular';
   font-size: 17px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin: 0 auto; }
 
 .col-left {
   width: 36%;
