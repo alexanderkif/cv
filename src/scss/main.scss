@@ -33,6 +33,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
   margin-left: $margin-cols;
   margin-right: $margin-fix;
   background-color: $error-color;
+  margin-bottom: 80px;
 }
 
 .col-right {
@@ -42,6 +43,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
   float: right;
   background-color: $warn-color;
   min-width: 570px;
+  margin-bottom: 80px;
 }
 
 @import "../logo/logo";
