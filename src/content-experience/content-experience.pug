@@ -2,12 +2,13 @@
 mixin experience(experience)
     .experience
         +block-header(experience.icon, experience.header)
-        each exp in experience.expList
-            .content
-                .point
-                    i(class="material-icons icons-size")= 'lens'
-                .subheader
-                    .compname= exp[0]
-                    .expyears= exp[1]
-                .ujh= exp[2]
-                .exptext= exp[3]
+        .experience__content
+            each exp in experience.expList
+                .experience__unit
+                    .experience__point
+                        i(class="material-icons icons-size")= 'lens'
+                    .experience__subheader
+                        .experience__company_name= exp[0]
+                        .experience__years= exp[1]
+                    .experience__job= exp[2]
+                    .experience__text= exp[3]

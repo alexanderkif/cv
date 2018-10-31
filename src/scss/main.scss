@@ -4,8 +4,8 @@ $error-color: white;
 $info-color: white;
 $warn-color: white;
 $success-color: white;
-$width-left: 36%;
-$width-right: 54%;
+$width-left: 38%;
+$width-right: 56%;
 $margin-fix: 1%;
 $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
@@ -17,9 +17,8 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
 
 .col {
-  margin: 0;
   min-width: 1010px;
-  max-width: 1200px;
+  max-width: 1260px;
   display: block;
   font-family: 'Conv_MyriadPro-Regular';
   font-size: 17px;
@@ -31,6 +30,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
   width: $width-left;
   float: left;
   margin-left: $margin-cols;
+  margin-left: 10px;
   margin-right: $margin-fix;
   background-color: $error-color;
   margin-bottom: 80px;

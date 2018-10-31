@@ -1,31 +1,36 @@
 .software {
-    margin-top: 65px;
+    margin-top: 55px;
     width: 100%;
     background-color: $info-color;
-}
-.insoftware {
-    margin-left: 20px;
-    text-align: left;
-    font-size: 28px;
-    text-transform: uppercase;
-}
-.bar {
-    margin: 20px;
-    display: table;
-    width: 90%;
-    height: 25px;
-    .blue {
+    &__insoftware {
+        margin-left: 20px;
+        text-align: left;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    &__bar {
+        margin: 16px;
+        display: table;
+        width: 90%;
+        height: 25px;
+    }
+    &__blue {
         display: table-cell;
         background-color: #056cb4;
     }
-    .grey {
+    &__grey {
         display: table-cell;
         background-color: lightgray;
     }
-}
 
-.leftsoftware, .rightsoftware {
-    margin: 0;
-    display: inline-block;
-    width: 49%;
+    &__leftsoftware, &__rightsoftware {
+        margin: 0;
+        margin-top: 20px;
+        display: inline-block;
+        width: 47%;
+    }
+    &__middle {
+        display: inline-block;
+        width: 4%;
+    }
 }

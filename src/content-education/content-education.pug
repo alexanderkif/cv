@@ -2,12 +2,13 @@
 mixin education(education)
     .education
         +block-header(education.icon, education.header)
-        each edu in education.eduList
-            .content
-                .point
-                    i(class="material-icons icons-size")= 'lens'
-                .subheader
-                    .degree= edu[0]
-                    .years= edu[1]
-                .uname= edu[2]
-                .text= edu[3]
+        .education__content
+            each edu in education.eduList
+                .education__unit
+                    .education__point
+                        i(class="material-icons icons-size")= 'lens'
+                    .education__subheader
+                        .education__degree= edu[0]
+                        .education__years= edu[1]
+                    .education__name= edu[2]
+                    .education__text= edu[3]

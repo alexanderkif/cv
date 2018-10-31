@@ -5,29 +5,32 @@
     background-color: $info-color;
     text-align: center;
     text-transform: uppercase;
-    .name {
+    &__name {
         margin-top: 20px;
+        margin-left: 20px;
         height: 1em;
         font-size: 60px;
         font-family: 'Conv_MyriadPro-Regular';
         letter-spacing: 2px;
         filter: blur(1px);
     }
-    .surname {
+    &__surname {
         position: relative;
-        top: -5px;
+        top: -10px;
         height: 1em;
         font-size: 66px;
         font-weight: bold;
         font-family: 'Conv_MyriadPro-Bold';
         letter-spacing: 3px;
         background-color: #ffffff00;
+        margin-left: 20px;
     }
-    .graphic {
-        margin-top: 15px;
+    &__graphic {
+        margin-top: 10px;
         height: 1em;
         font-size: 26px;
         font-family: 'Conv_MyriadPro-Bold';
         letter-spacing: 1px;
+        margin-left: 20px;
     }
   }

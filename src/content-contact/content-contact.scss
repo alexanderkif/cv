@@ -1,19 +1,20 @@
 .contact {
-    margin-top: 40px;
+    margin-top: 53px;
     width: 100%;
     background-color: $info-color;
-}
-.content {
-    width: 100%;
-    margin-top: 15px;
-    position: relative;
-    .incontact {
+    &__content {
+        width: 100%;
+        margin-top: 15px;
+        position: relative;
+    }
+    &__incontact {
         width: 100%;
         font-size: 24px;
+        margin-top: 30px;
         margin-bottom: 25px;
         margin-left: 15px;
     }
-    .name {
+    &__name {
         margin-left: 0px;
         margin-top: 1px;
         display: inline-block;
@@ -22,8 +23,9 @@
         color: $base-color;
         letter-spacing: 0px;
         text-transform: uppercase;
+        width: 127px;
     }
-    .value {
+    &__value {
         display: inline-block;
         margin-left: 10px;
         font-family: 'Conv_MyriadPro-Regular';

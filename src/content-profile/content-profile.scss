@@ -1,19 +1,21 @@
 
 .profile {
-    margin-top: 44px;
+    margin-top: 32px;
     width: 100%;
     background-color: $info-color;
-}
-.procontent {
-    margin: 0px 15px;
-    position: relative;
-    font-size: 17px;
-}
-.inprofile {
-    display: inline;
-    font-family: 'Conv_MyriadPro-Regular';
-}
-.b {    
-    display: inline;
-    font-family: 'Conv_MyriadPro-Bold';
+    &__procontent {
+        margin: 0px 15px;
+        position: relative;
+        font-size: 17px;
+    }
+    &__inprofile {
+        display: inline;
+        font-family: 'Conv_MyriadPro-Regular';
+        font-size: 16.8px;
+    }
+    &__b {    
+        display: inline;
+        font-family: 'Conv_MyriadPro-Bold';
+        font-size: 16.8px;
+    }
 }

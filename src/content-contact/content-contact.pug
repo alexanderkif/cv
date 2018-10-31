@@ -2,8 +2,8 @@
 mixin contact(contact)
     .contact
         +block-header(contact.icon, contact.header)
-        .content
+        .contact__content
             each cont in contact.contacts
-                .incontact
-                    .name= cont[0]
-                    .value= cont[1]
+                .contact__incontact
+                    .contact__name= cont[0]
+                    .contact__value= cont[1]
