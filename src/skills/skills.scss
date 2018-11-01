@@ -1,5 +1,4 @@
 .skills {
-    margin-top: 50px;
     width: 100%;
     background-color: $info-color;
     &__content {
@@ -35,7 +34,7 @@
         color: #056cb4;
         margin: 0px 3px;
     }
-    &__circle-gray {
+    &__circle-passive {
         color: lightgray;
         margin: 0px 3px;
     }

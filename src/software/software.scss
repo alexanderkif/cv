@@ -1,29 +1,33 @@
 .software {
-    margin-top: 55px;
     width: 100%;
     background-color: $info-color;
-    &__insoftware {
+    &__content {
+        margin-top: 5px;
+    }
+    &__name {
         margin-left: 20px;
         text-align: left;
         font-size: 28px;
         text-transform: uppercase;
     }
     &__bar {
-        margin: 16px;
+        margin: 17px 15px;
+        margin-top: 10px;
+        margin-bottom: 25px;
         display: table;
         width: 90%;
         height: 25px;
     }
-    &__blue {
+    &__bar-active {
         display: table-cell;
         background-color: #056cb4;
     }
-    &__grey {
+    &__bar-passive {
         display: table-cell;
         background-color: lightgray;
     }
 
-    &__leftsoftware, &__rightsoftware {
+    &__left, &__right {
         margin: 0;
         margin-top: 20px;
         display: inline-block;

@@ -1,11 +1,11 @@
 include ./logo/logo.pug
-include ./block-header/block-header
-include ./content-profile/content-profile
-include ./content-contact/content-contact
-include ./content-skills/content-skills
-include ./content-education/content-education
-include ./content-experience/content-experience
-include ./content-software/content-software
+include ./header/header
+include ./profile/profile
+include ./contact/contact
+include ./skills/skills
+include ./education/education
+include ./experience/experience
+include ./software/software
 
 - var logoObj= {}
 - logoObj.name= 'name here'
@@ -80,12 +80,19 @@ html
   body
     .col
       .col-left
-        +logo(logoObj)
-        +profile(profile)
-        +contact(contact)
-        +skills(skills)
+        .row-logo
+          +logo(logoObj)
+        .row-profile
+          +profile(profile)
+        .row-contact
+          +contact(contact)
+        .row-skills
+          +skills(skills)
       .col-right
-        +education(education)
-        +experience(experience)
-        +software(software)
+        .row-education
+          +education(education)
+        .row-experience
+          +experience(experience)
+        .row-software
+          +software(software)
     script(src="main.js")

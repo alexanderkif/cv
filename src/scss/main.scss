@@ -9,13 +9,6 @@ $width-right: 56%;
 $margin-fix: 1%;
 $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
-// $error-color: rgb(255, 226, 227);
-// $info-color: rgb(218, 255, 250);
-// $warn-color: rgb(254, 255, 209);
-// $success-color: rgb(219, 255, 231);
-
-
-
 .col {
   min-width: 1010px;
   max-width: 1260px;
@@ -46,14 +39,42 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
   margin-bottom: 80px;
 }
 
+.row-logo {
+  padding-top: 0;
+}
+
+.row-profile {
+  padding-top: 32px;
+}
+
+.row-contact {
+  padding-top: 45px;
+}
+
+.row-skills {
+  padding-top: 25px;
+}
+
+.row-education {
+  padding-top: 78px;
+}
+
+.row-experience {
+  padding-top: 58px;
+}
+
+.row-software {
+  padding-top: 59px;
+}
+
 @import "../logo/logo";
-@import "../block-header/block-header";
-@import "../content-profile/content-profile";
-@import "../content-contact/content-contact";
-@import "../content-skills/content-skills";
-@import "../content-education/content-education";
-@import "../content-experience/content-experience";
-@import "../content-software/content-software";
+@import "../header/header";
+@import "../profile/profile";
+@import "../contact/contact";
+@import "../skills/skills";
+@import "../education/education";
+@import "../experience/experience";
+@import "../software/software";
 
 
 

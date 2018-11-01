@@ -1,7 +1,7 @@
 
 mixin skills(skills)
     .skills
-        +block-header(skills.icon, skills.header)
+        +header(skills.icon, skills.header)
         .skills__content
             each skill in skills.skillsList
                 .skills__name= skill[0]
@@ -10,4 +10,4 @@ mixin skills(skills)
                         if x < skill[1]
                             i(class="material-icons icons-size skills__circle-active")= 'lens'
                         else
-                            i(class="material-icons icons-size skills__circle-gray")= 'lens'
+                            i(class="material-icons icons-size skills__circle-passive")= 'lens'

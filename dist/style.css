@@ -26,6 +26,27 @@
   min-width: 570px;
   margin-bottom: 80px; }
 
+.row-logo {
+  padding-top: 0; }
+
+.row-profile {
+  padding-top: 32px; }
+
+.row-contact {
+  padding-top: 45px; }
+
+.row-skills {
+  padding-top: 25px; }
+
+.row-education {
+  padding-top: 78px; }
+
+.row-experience {
+  padding-top: 58px; }
+
+.row-software {
+  padding-top: 59px; }
+
 .logo {
   height: 590px;
   width: 100%;
@@ -62,9 +83,7 @@
   width: 100%;
   height: 78px;
   display: table;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  padding-left: 10px; }
   .header__round {
     display: table-cell;
     position: relative;
@@ -116,11 +135,10 @@
     border-top: 5px solid #056cb4; }
 
 .profile {
-  margin-top: 32px;
   width: 100%;
   background-color: white; }
-  .profile__procontent {
-    margin: 0px 15px;
+  .profile__text {
+    margin: 10px 15px;
     position: relative;
     font-size: 17px; }
   .profile__inprofile {
@@ -133,7 +151,6 @@
     font-size: 16.8px; }
 
 .contact {
-  margin-top: 53px;
   width: 100%;
   background-color: white; }
   .contact__content {
@@ -163,7 +180,6 @@
     letter-spacing: 0px; }
 
 .skills {
-  margin-top: 50px;
   width: 100%;
   background-color: white; }
   .skills__content {
@@ -194,12 +210,11 @@
   .skills__circle-active {
     color: #056cb4;
     margin: 0px 3px; }
-  .skills__circle-gray {
+  .skills__circle-passive {
     color: lightgray;
     margin: 0px 3px; }
 
 .education {
-  margin-top: 77px;
   width: 100%;
   background-color: white; }
   .education__content {
@@ -246,11 +261,10 @@
     color: black; }
 
 .experience {
-  margin-top: 55px;
   width: 100%;
   background-color: white; }
   .experience__content {
-    margin-top: 45px;
+    margin-top: 42px;
     margin-left: 5px; }
   .experience__unit {
     width: 100%;
@@ -293,26 +307,29 @@
     color: black; }
 
 .software {
-  margin-top: 55px;
   width: 100%;
   background-color: white; }
-  .software__insoftware {
+  .software__content {
+    margin-top: 5px; }
+  .software__name {
     margin-left: 20px;
     text-align: left;
     font-size: 28px;
     text-transform: uppercase; }
   .software__bar {
-    margin: 16px;
+    margin: 17px 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     display: table;
     width: 90%;
     height: 25px; }
-  .software__blue {
+  .software__bar-active {
     display: table-cell;
     background-color: #056cb4; }
-  .software__grey {
+  .software__bar-passive {
     display: table-cell;
     background-color: lightgray; }
-  .software__leftsoftware, .software__rightsoftware {
+  .software__left, .software__right {
     margin: 0;
     margin-top: 20px;
     display: inline-block;
