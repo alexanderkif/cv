@@ -2,17 +2,17 @@
 .profile {
     width: 100%;
     background-color: $info-color;
-    &__text {
+    &__content {
         margin: 10px 15px;
         position: relative;
         font-size: 17px;
     }
-    &__inprofile {
+    &__text {
         display: inline;
         font-family: 'Conv_MyriadPro-Regular';
         font-size: 16.8px;
     }
-    &__b {    
+    &__text-b {    
         display: inline;
         font-family: 'Conv_MyriadPro-Bold';
         font-size: 16.8px;

@@ -1,40 +1,25 @@
+@import "../line-bar/line-bar";
+
 .software {
     width: 100%;
     background-color: $info-color;
     &__content {
         margin-top: 5px;
     }
-    &__name {
-        margin-left: 20px;
-        text-align: left;
-        font-size: 28px;
-        text-transform: uppercase;
-    }
     &__bar {
-        margin: 17px 15px;
-        margin-top: 10px;
+        margin-left: 15px;
         margin-bottom: 25px;
-        display: table;
-        width: 90%;
-        height: 25px;
     }
-    &__bar-active {
-        display: table-cell;
-        background-color: #056cb4;
-    }
-    &__bar-passive {
-        display: table-cell;
-        background-color: lightgray;
-    }
-
     &__left, &__right {
         margin: 0;
         margin-top: 20px;
         display: inline-block;
-        width: 47%;
+        width: 46%;
     }
-    &__middle {
-        display: inline-block;
-        width: 4%;
+    &__left {
+        float: left;
+    } 
+    &__right {
+        float: right;
     }
 }
