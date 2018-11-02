@@ -1,0 +1,9 @@
+mixin point-bar(element)
+    .point-bar
+        .point-bar__name= element[0]
+        .point-bar__scale
+            - for (var x = 0; x < element[2]; x++)
+                if x < element[1]
+                    i(class="material-icons icons-size point-bar__circle-active")= 'lens'
+                else
+                    i(class="material-icons icons-size point-bar__circle-passive")= 'lens'

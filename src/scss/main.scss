@@ -15,68 +15,66 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
   display: block;
   font-family: 'Conv_MyriadPro-Regular';
   font-size: 17px;
-  margin-bottom: 50px;
   margin: 0 auto;
+  
+  &__left {
+    width: $width-left;
+    float: left;
+    margin-left: $margin-cols;
+    margin-left: 10px;
+    margin-right: $margin-fix;
+    background-color: $error-color;
+    margin-bottom: 80px;
+  }
+  
+  &__right {
+    width: $width-right;
+    margin-left: $margin-fix;
+    margin-right: $margin-cols;
+    float: right;
+    background-color: $warn-color;
+    min-width: 570px;
+    margin-bottom: 80px;
+  }
+  
+  &__logo {
+    padding-top: 0;
+  }
+  
+  &__profile {
+    padding-top: 32px;
+  }
+  
+  &__contact {
+    padding-top: 45px;
+  }
+  
+  &__skills {
+    padding-top: 25px;
+  }
+  
+  &__education {
+    padding-top: 78px;
+    color: $base-color;
+  }
+
+  &__experience {
+    padding-top: 58px;
+  }
+  
+  &__software {
+    padding-top: 68px;
+  }
 }
 
-.col-left {
-  width: $width-left;
-  float: left;
-  margin-left: $margin-cols;
-  margin-left: 10px;
-  margin-right: $margin-fix;
-  background-color: $error-color;
-  margin-bottom: 80px;
-}
-
-.col-right {
-  width: $width-right;
-  margin-left: $margin-fix;
-  margin-right: $margin-cols;
-  float: right;
-  background-color: $warn-color;
-  min-width: 570px;
-  margin-bottom: 80px;
-}
-
-.row-logo {
-  padding-top: 0;
-}
-
-.row-profile {
-  padding-top: 32px;
-}
-
-.row-contact {
-  padding-top: 45px;
-}
-
-.row-skills {
-  padding-top: 25px;
-}
-
-.row-education {
-  padding-top: 78px;
-}
-
-.row-experience {
-  padding-top: 58px;
-}
-
-.row-software {
-  padding-top: 59px;
-}
 
 @import "../logo/logo";
 @import "../header/header";
 @import "../profile/profile";
 @import "../contact/contact";
 @import "../skills/skills";
-@import "../education/education";
-@import "../experience/experience";
+@import "../blocks/blocks";
 @import "../software/software";
-
-
 
 
 @font-face {

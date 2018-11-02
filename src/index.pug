@@ -3,14 +3,13 @@ include ./header/header
 include ./profile/profile
 include ./contact/contact
 include ./skills/skills
-include ./education/education
-include ./experience/experience
+include ./blocks/blocks
 include ./software/software
 
 - var logoObj= {}
 - logoObj.name= 'name here'
 - logoObj.surname= 'surname'
-- logoObj.graphic= 'graphic designer'
+- logoObj.profession= 'graphic designer'
 
 - var profile= {}
 - profile.icon= 'person'
@@ -32,10 +31,10 @@ include ./software/software
 - skills.icon= 'build'
 - skills.header= 'skills'
 - var skillsList= []
-- skillsList[0]= ['creative', 9]
-- skillsList[1]= ['teamwork', 11]
-- skillsList[2]= ['innovate', 6]
-- skillsList[3]= ['communication', 11]
+- skillsList[0]= ['creative', 9, 12]
+- skillsList[1]= ['teamwork', 11, 12]
+- skillsList[2]= ['innovate', 6, 12]
+- skillsList[3]= ['communication', 11, 12]
 - skills.skillsList= skillsList
 
 - var education= {}
@@ -46,7 +45,7 @@ include ./software/software
 - eduList[1]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
 - eduList[2]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
 - eduList[3]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- education.eduList= eduList
+- education.list= eduList
 
 - var experience= {}
 - experience.icon= 'work'
@@ -55,7 +54,7 @@ include ./software/software
 - expList[0]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
 - expList[1]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
 - expList[2]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- experience.expList= expList
+- experience.list= expList
 
 - var software= {}
 - software.icon= 'computer'
@@ -79,20 +78,20 @@ html
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   body
     .col
-      .col-left
-        .row-logo
+      .col__left
+        .col__logo
           +logo(logoObj)
-        .row-profile
+        .col__profile
           +profile(profile)
-        .row-contact
+        .col__contact
           +contact(contact)
-        .row-skills
+        .col__skills
           +skills(skills)
-      .col-right
-        .row-education
-          +education(education)
-        .row-experience
-          +experience(experience)
-        .row-software
+      .col__right
+        .col__education
+          +blocks(education)
+        .col__experience
+          +blocks(experience)
+        .col__software
           +software(software)
     script(src="main.js")

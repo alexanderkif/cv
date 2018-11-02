@@ -1,13 +1,9 @@
+include ../point-bar/point-bar
 
 mixin skills(skills)
     .skills
         +header(skills.icon, skills.header)
         .skills__content
             each skill in skills.skillsList
-                .skills__name= skill[0]
-                .skills__scale
-                    - for (var x = 0; x < 12; x++)
-                        if x < skill[1]
-                            i(class="material-icons icons-size skills__circle-active")= 'lens'
-                        else
-                            i(class="material-icons icons-size skills__circle-passive")= 'lens'
+                .skills__list
+                    +point-bar(skill)

@@ -1,8 +1,8 @@
-.experience {
+.blocks {
     width: 100%;
     background-color: $info-color;
     &__content {
-        margin-top: 42px;
+        margin-top: 30px;
         margin-left: 5px;
     }
     &__unit {
@@ -12,21 +12,20 @@
     }
     &__point {
         position: absolute;
+        color: black;
         top: 7px;
         left: 10px;
         .icons-size {
             font-size: 28px; 
         }
     }
-    &__subheader {
-    }
-    &__company_name {
-      margin-left: 55px;
+    &__degree {
+        margin-left: 55px;
         margin-top: 1px;
         display: inline-block;
         font-family: 'Conv_MyriadPro-Bold';
         font-size: 30px;
-        color: black;
+        color: inherit;
         letter-spacing: 0px;
         text-transform: uppercase;
     }
@@ -38,7 +37,7 @@
         color: black;
         letter-spacing: 0px;
     }
-    &__job {
+    &__name {
         margin-left: 55px;
         font-family: 'Conv_MyriadPro-Regular';
         font-size: 30px;
@@ -53,7 +52,4 @@
         font-size: 17px;
         color: black;
     }    
-    // .experience > .header1 {
-    //     margin-bottom: 44px;
-    // }
 }

@@ -1,3 +1,5 @@
+@import "../point-bar/point-bar";
+
 .skills {
     width: 100%;
     background-color: $info-color;
@@ -5,37 +7,5 @@
         width: 100%;
         margin-top: 23px;
         position: relative;
-    }
-    &__scale {
-        margin-left: 40px;
-        font-family: 'Conv_MyriadPro-Regular';
-        font-size: 30px;
-        color: black;
-        letter-spacing: 0px;
-        margin: 8px auto;
-        // margin-bottom: 3px;
-        text-align: center;
-        font-size: 28px;
-        min-width: 340px;
-    }
-    &__name {
-        margin-left: 40px;
-        font-family: 'Conv_MyriadPro-Regular';
-        font-size: 30px;
-        color: black;
-        letter-spacing: 0px;
-        margin: 8px auto;
-        margin-top: 17px;
-        text-align: center;
-        font-size: 28px;
-        text-transform: uppercase;
-    }
-    &__circle-active {
-        color: #056cb4;
-        margin: 0px 3px;
-    }
-    &__circle-passive {
-        color: lightgray;
-        margin: 0px 3px;
     }
 }
