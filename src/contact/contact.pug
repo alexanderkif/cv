@@ -1,9 +1,0 @@
-
-mixin contact(contact)
-    .contact
-        +header(contact.icon, contact.header)
-        .contact__content
-            each cont in contact.contacts
-                .contact__incontact
-                    .contact__name= cont[0]
-                    .contact__value= cont[1]
