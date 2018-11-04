@@ -1,0 +1,10 @@
+.education {
+    width: 100%;
+    background-color: $bg-color;
+    &__content {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+}
+
+@import "../unit/unit";

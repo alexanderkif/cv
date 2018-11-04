@@ -2,7 +2,8 @@ include ../point-bar/point-bar
 
 mixin skills(skills)
     .skills
-        +header(skills.icon, skills.header)
+        .skills__header
+            +header(skills.icon, skills.header)
         .skills__content
             each skill in skills.skillsList
                 .skills__list

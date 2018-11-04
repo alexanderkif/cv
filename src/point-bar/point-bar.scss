@@ -23,12 +23,13 @@
         font-size: 28px;
         text-transform: uppercase;
     }
-    &__circle-active {
-        color: #056cb4;
+    &__circle {
         margin: 0px 3px;
-    }
-    &__circle-passive {
-        color: lightgray;
-        margin: 0px 3px;
+        &_active {
+            color: #056cb4;
+        }
+        &_passive {
+            color: lightgray;
+        }
     }
 }

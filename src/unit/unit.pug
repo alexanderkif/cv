@@ -1,0 +1,9 @@
+mixin unit(elem, className)
+    .unit
+        .unit__point
+            i(class="material-icons icons-size")= 'lens'
+        .unit__header
+            .unit__header-text(class=className)= elem[0]
+            .unit__header-years= elem[1]
+        .unit__name= elem[2]
+        .unit__text= elem[3]

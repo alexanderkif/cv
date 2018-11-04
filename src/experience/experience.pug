@@ -1,0 +1,9 @@
+include ../unit/unit
+
+mixin experience(element)
+    .experience
+        .experience__header
+            +header(element.icon, element.header)
+        .experience__content
+            each elem in element.list
+                +unit(elem, "")

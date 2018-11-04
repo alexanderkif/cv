@@ -1,7 +1,8 @@
 
 mixin contact(contact)
     .contact
-        +header(contact.icon, contact.header)
+        .contact__header
+            +header(contact.icon, contact.header)
         .contact__content
             each cont in contact.contacts
                 .contact__row
