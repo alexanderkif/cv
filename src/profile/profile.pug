@@ -1,6 +1,7 @@
 mixin profile(profile)
     .profile
-        +header(profile.icon, profile.header)
+        .profile__header
+            +header(profile.icon, profile.header)
         .profile__content
             .profile__text= profile.text
             .profile__text-b= profile.textB

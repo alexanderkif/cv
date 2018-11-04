@@ -1,0 +1,9 @@
+include ../unit/unit
+
+mixin education(element)
+    .education
+        .education__header
+            +header(element.icon, element.header)
+        .education__content
+            each elem in element.list
+                +unit(elem, "unit__header-text_base-color")

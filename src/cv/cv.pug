@@ -1,0 +1,27 @@
+include ../person/person
+include ../header/header
+include ../profile/profile
+include ../contact/contact
+include ../skills/skills
+include ../education/education
+include ../experience/experience
+include ../software/software
+
+mixin cv(personObj, profile, contact, skills, education, experience, software)
+    .cv
+      .cv__left-column
+        .cv__person
+          +person(personObj)
+        .cv__profile
+          +profile(profile)
+        .cv__contact
+          +contact(contact)
+        .cv__skills
+          +skills(skills)
+      .cv__right-column
+        .cv__education
+          +education(education)
+        .cv__experience
+          +experience(experience)
+        .cv__software
+          +software(software)

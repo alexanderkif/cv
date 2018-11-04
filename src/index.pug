@@ -1,15 +1,9 @@
-include ./logo/logo.pug
-include ./header/header
-include ./profile/profile
-include ./contact/contact
-include ./skills/skills
-include ./blocks/blocks
-include ./software/software
+include ./cv/cv
 
-- var logoObj= {}
-- logoObj.name= 'name here'
-- logoObj.surname= 'surname'
-- logoObj.profession= 'graphic designer'
+- var personObj= {}
+- personObj.name= 'name here'
+- personObj.surname= 'surname'
+- personObj.profession= 'graphic designer'
 
 - var profile= {}
 - profile.icon= 'person'
@@ -77,21 +71,5 @@ html
     link(rel="stylesheet" href="style.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   body
-    .col
-      .col__left
-        .col__logo
-          +logo(logoObj)
-        .col__profile
-          +profile(profile)
-        .col__contact
-          +contact(contact)
-        .col__skills
-          +skills(skills)
-      .col__right
-        .col__education
-          +blocks(education)
-        .col__experience
-          +blocks(experience)
-        .col__software
-          +software(software)
+    +cv(personObj, profile, contact, skills, education, experience, software)
     script(src="main.js")
