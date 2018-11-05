@@ -3,7 +3,6 @@
   min-width: 1010px;
   max-width: 1260px;
   display: block;
-  font-family: 'Conv_MyriadPro';
   font-size: 17px;
   margin: 0 auto; }
   .cv__left-column {
@@ -48,7 +47,6 @@
     margin-left: 20px;
     height: 1em;
     font-size: 60px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     letter-spacing: 2px;
     filter: blur(1px); }
@@ -57,7 +55,6 @@
     top: -10px;
     height: 1em;
     font-size: 66px;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     letter-spacing: 3px;
     background-color: #ffffff00;
@@ -66,7 +63,6 @@
     margin-top: 10px;
     height: 1em;
     font-size: 26px;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     letter-spacing: 1px;
     margin-left: 20px; }
@@ -114,8 +110,6 @@
     padding-top: 8px;
     font-size: 45px;
     font-weight: bold;
-    font-family: 'Conv_MyriadPro';
-    font-weight: bold;
     background-color: #ffffff00;
     color: #056cb4;
     letter-spacing: 0px;
@@ -136,12 +130,10 @@
     font-size: 17px; }
   .profile__text {
     display: inline;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 16.8px; }
   .profile__text-b {
     display: inline;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     font-size: 16.8px; }
 
@@ -162,7 +154,6 @@
     margin-left: 0px;
     margin-top: 1px;
     display: inline-block;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     color: #056cb4;
     letter-spacing: 0px;
@@ -171,14 +162,12 @@
   .contact__value {
     display: inline-block;
     margin-left: 10px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     color: black;
     letter-spacing: 0px; }
 
 .point-bar__scale {
   margin-left: 40px;
-  font-family: 'Conv_MyriadPro';
   font-weight: normal;
   font-size: 30px;
   color: black;
@@ -190,7 +179,6 @@
 
 .point-bar__name {
   margin-left: 40px;
-  font-family: 'Conv_MyriadPro';
   font-weight: normal;
   font-size: 30px;
   color: black;
@@ -237,7 +225,6 @@
     margin-left: 55px;
     margin-top: 1px;
     display: inline-block;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 0px;
@@ -247,13 +234,11 @@
   .unit__header-years {
     display: inline-block;
     margin-left: 10px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 30px;
     letter-spacing: 0px; }
   .unit__name {
     margin-left: 55px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 30px;
     letter-spacing: 0px;
@@ -261,7 +246,6 @@
   .unit__text {
     margin-left: 55px;
     margin-top: 5px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 17px; }
 
@@ -286,7 +270,6 @@
     margin-left: 55px;
     margin-top: 1px;
     display: inline-block;
-    font-family: 'Conv_MyriadPro';
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 0px;
@@ -296,13 +279,11 @@
   .unit__header-years {
     display: inline-block;
     margin-left: 10px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 30px;
     letter-spacing: 0px; }
   .unit__name {
     margin-left: 55px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 30px;
     letter-spacing: 0px;
@@ -310,7 +291,6 @@
   .unit__text {
     margin-left: 55px;
     margin-top: 5px;
-    font-family: 'Conv_MyriadPro';
     font-weight: normal;
     font-size: 17px; }
 
@@ -351,15 +331,18 @@
   .software__right {
     float: right; }
 
+html {
+  font-family: 'Conv Myriad Pro'; }
+
 @font-face {
-  font-family: 'Conv_MyriadPro';
+  font-family: 'Conv Myriad Pro';
   src: url(fonts/MyriadPro-Regular.eot);
   src: local("\263A"), url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg) format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Conv_MyriadPro';
+  font-family: 'Conv Myriad Pro';
   src: url(fonts/MyriadPro-Bold.eot);
   src: local("\263A"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
   font-weight: bold;
