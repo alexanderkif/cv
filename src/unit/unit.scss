@@ -15,7 +15,8 @@
         margin-left: 55px;
         margin-top: 1px;
         display: inline-block;
-        font-family: 'Conv_MyriadPro-Bold';
+        font-family: 'Conv_MyriadPro';
+        font-weight: bold;
         font-size: 30px;
         letter-spacing: 0px;
         text-transform: uppercase;
@@ -26,13 +27,15 @@
     &__header-years {
         display: inline-block;
         margin-left: 10px;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 30px;
         letter-spacing: 0px;
     }
     &__name {
         margin-left: 55px;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 30px;
         letter-spacing: 0px;
         text-transform: uppercase;
@@ -40,7 +43,8 @@
     &__text {
         margin-left: 55px;
         margin-top: 5px;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 17px;
     }    
 }

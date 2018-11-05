@@ -16,7 +16,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 @import "../software/software";
 
 @font-face {
-    font-family: 'Conv_MyriadPro-Regular';
+    font-family: 'Conv_MyriadPro';
     src: url('./fonts/MyriadPro-Regular.eot');
     src: local('☺'), 
         url('./fonts/MyriadPro-Regular.woff') format('woff'), 
@@ -27,12 +27,12 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 }
 
 @font-face {
-	font-family: 'Conv_MyriadPro-Bold';
+	font-family: 'Conv_MyriadPro';
 	src: url('./fonts/MyriadPro-Bold.eot');
 	src: local('☺'), 
 		url('./fonts/MyriadPro-Bold.woff') format('woff'), 
 		url('./fonts/MyriadPro-Bold.ttf') format('truetype'), 
 		url('./fonts/MyriadPro-Bold.svg') format('svg');
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 }

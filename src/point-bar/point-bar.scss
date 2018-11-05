@@ -1,19 +1,20 @@
 .point-bar {
     &__scale {
         margin-left: 40px;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 30px;
         color: black;
         letter-spacing: 0px;
         margin: 8px auto;
-        // margin-bottom: 3px;
         text-align: center;
         font-size: 28px;
         min-width: 340px;
     }
     &__name {
         margin-left: 40px;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 30px;
         color: black;
         letter-spacing: 0px;

@@ -9,12 +9,14 @@
     }
     &__text {
         display: inline;
-        font-family: 'Conv_MyriadPro-Regular';
+        font-family: 'Conv_MyriadPro';
+        font-weight: normal;
         font-size: 16.8px;
     }
     &__text-b {    
         display: inline;
-        font-family: 'Conv_MyriadPro-Bold';
+        font-family: 'Conv_MyriadPro';
+        font-weight: bold;
         font-size: 16.8px;
     }
 }

@@ -9,7 +9,6 @@
         position: relative;
         margin-left: 10px;
         width: 76px;
-        // height: 76px;
         min-width: 76px;
         min-height: 76px;
         border-radius: 50%;
@@ -47,7 +46,8 @@
         padding-top: 8px;
         font-size: 45px;
         font-weight: bold;
-        font-family: 'Conv_MyriadPro-Bold';
+        font-family: 'Conv_MyriadPro';
+        font-weight: bold;
         background-color: #ffffff00;
         color: $base-color;
         letter-spacing: 0px;
