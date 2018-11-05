@@ -1,9 +1,5 @@
 $base-color: #056cb4;
 $bg-color: white;
-$width-left: 38%;
-$width-right: 56%;
-$margin-fix: 1%;
-$margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
 @import "../cv/cv";
 @import "../person/person";
@@ -17,6 +13,9 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 
 html {    
   font-family: 'Conv Myriad Pro';
+}
+body {
+    margin: 0;
 }
 
 @font-face {

@@ -4,17 +4,16 @@
     background-color: $bg-color;
     &__content {
         margin: 10px 15px;
+        margin-right: 20px;
         position: relative;
         font-size: 17px;
     }
     &__text {
         display: inline;
         font-weight: normal;
-        font-size: 16.8px;
     }
     &__text-b {    
         display: inline;
         font-weight: bold;
-        font-size: 16.8px;
     }
 }

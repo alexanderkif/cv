@@ -1,29 +1,38 @@
 
 .cv {
-  min-width: 1010px;
-  max-width: 1260px;
-  display: block;
+  min-width: 430px;
+  max-width: 1255px;
   font-size: 17px;
   margin: 0 auto;
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    margin: 0;
+  }
   
   &__left-column {
-    width: $width-left;
-    float: left;
-    margin-left: $margin-cols;
-    margin-left: 10px;
-    margin-right: $margin-fix;
+    min-width: 370px;
+    flex-basis: 39%;
     background-color: $bg-color;
     margin-bottom: 80px;
+    @media screen and (max-width: 900px) {
+      flex-grow: 0.9;
+      margin-bottom: 0px;
+    }
   }
   
   &__right-column {
-    width: $width-right;
-    margin-left: $margin-fix;
-    margin-right: $margin-cols;
-    float: right;
     background-color: $bg-color;
-    min-width: 570px;
+    min-width: 430px;
+    flex-basis: 57%;
     margin-bottom: 80px;
+    @media screen and (max-width: 900px) {
+      flex-grow: 0.9;
+    }
   }
   
   &__person {
@@ -44,6 +53,9 @@
   
   &__education {
     padding-top: 78px;
+    @media screen and (max-width: 900px) {
+      padding-top: 50px;
+    }
   }
 
   &__experience {
