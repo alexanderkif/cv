@@ -1,26 +1,34 @@
 @charset "UTF-8";
 .cv {
-  min-width: 1010px;
-  max-width: 1260px;
-  display: block;
+  min-width: 430px;
+  max-width: 1255px;
   font-size: 17px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  @media screen and (max-width: 900px) {
+    .cv {
+      justify-content: center;
+      margin: 0; } }
   .cv__left-column {
-    width: 38%;
-    float: left;
-    margin-left: 2% -1;
-    margin-left: 10px;
-    margin-right: 1%;
+    min-width: 370px;
+    flex-basis: 39%;
     background-color: white;
     margin-bottom: 80px; }
+    @media screen and (max-width: 900px) {
+      .cv__left-column {
+        flex-grow: 0.9;
+        margin-bottom: 0px; } }
   .cv__right-column {
-    width: 56%;
-    margin-left: 1%;
-    margin-right: 2% -1;
-    float: right;
     background-color: white;
-    min-width: 570px;
+    min-width: 430px;
+    flex-basis: 57%;
     margin-bottom: 80px; }
+    @media screen and (max-width: 900px) {
+      .cv__right-column {
+        flex-grow: 0.9; } }
   .cv__person {
     padding-top: 0; }
   .cv__profile {
@@ -31,6 +39,9 @@
     padding-top: 25px; }
   .cv__education {
     padding-top: 78px; }
+    @media screen and (max-width: 900px) {
+      .cv__education {
+        padding-top: 50px; } }
   .cv__experience {
     padding-top: 58px; }
   .cv__software {
@@ -126,16 +137,15 @@
   background-color: white; }
   .profile__content {
     margin: 10px 15px;
+    margin-right: 20px;
     position: relative;
     font-size: 17px; }
   .profile__text {
     display: inline;
-    font-weight: normal;
-    font-size: 16.8px; }
+    font-weight: normal; }
   .profile__text-b {
     display: inline;
-    font-weight: bold;
-    font-size: 16.8px; }
+    font-weight: bold; }
 
 .contact {
   width: 100%;
@@ -333,6 +343,9 @@
 
 html {
   font-family: 'Conv Myriad Pro'; }
+
+body {
+  margin: 0; }
 
 @font-face {
   font-family: 'Conv Myriad Pro';
