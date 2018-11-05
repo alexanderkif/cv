@@ -15,8 +15,12 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 @import "../experience/experience";
 @import "../software/software";
 
+html {    
+  font-family: 'Conv Myriad Pro';
+}
+
 @font-face {
-    font-family: 'Conv_MyriadPro';
+    font-family: 'Conv Myriad Pro';
     src: url('./fonts/MyriadPro-Regular.eot');
     src: local('☺'), 
         url('./fonts/MyriadPro-Regular.woff') format('woff'), 
@@ -27,7 +31,7 @@ $margin-cols: (100% - $width-right - $width-left - ($margin-fix * 2)) / 2 -1;
 }
 
 @font-face {
-	font-family: 'Conv_MyriadPro';
+	font-family: 'Conv Myriad Pro';
 	src: url('./fonts/MyriadPro-Bold.eot');
 	src: local('☺'), 
 		url('./fonts/MyriadPro-Bold.woff') format('woff'), 
