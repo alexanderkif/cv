@@ -1,6 +1,6 @@
 mixin line-bar(soft)
     .line-bar
-        .line-bar__name= soft[0]
+        .line-bar__name= soft.name
         .line-bar__bar
-            div(class="line-bar__bar-active" style="width: "+soft[1])
+            div(class="line-bar__bar-active" style="width: "+soft.value)
             .line-bar__bar-passive

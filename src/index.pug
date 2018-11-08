@@ -1,68 +1,10 @@
 include ./cv/cv
 
-- var personObj= {}
-- personObj.name= 'name here'
-- personObj.surname= 'surname'
-- personObj.profession= 'graphic designer'
+console.log("do it")
 
-- var profile= {}
-- profile.icon= 'person'
-- profile.header= 'profile'
-- profile.text= 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu '
-- profile.textB= 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.'
-
-- var contact= {}
-- contact.icon= 'call'
-- contact.header= 'contact'
-- var contacts= []
-- contacts[0]= ['address', 'Main Street, City.']
-- contacts[1]= ['email', 'contact@domain.com']
-- contacts[2]= ['phone', '555-555-555']
-- contacts[3]= ['website', 'www.yourweb.com']
-- contact.contacts= contacts
-
-- var skills= {}
-- skills.icon= 'build'
-- skills.header= 'skills'
-- var skillsList= []
-- skillsList[0]= ['creative', 9, 12]
-- skillsList[1]= ['teamwork', 11, 12]
-- skillsList[2]= ['innovate', 6, 12]
-- skillsList[3]= ['communication', 11, 12]
-- skills.skillsList= skillsList
-
-- var education= {}
-- education.icon= 'star'
-- education.header= 'education'
-- var eduList= []
-- eduList[0]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- eduList[1]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- eduList[2]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- eduList[3]= ['master degree', '// Feb 2011 - Jun 2014', 'university name', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- education.list= eduList
-
-- var experience= {}
-- experience.icon= 'work'
-- experience.header= 'experience'
-- var expList= []
-- expList[0]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- expList[1]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- expList[2]= ['company name', '// Feb 2011 - Jun 2014', 'your job here', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.']
-- experience.list= expList
-
-- var software= {}
-- software.icon= 'computer'
-- software.header= 'software'
-- var leftList= []
-- leftList[0]= ['photoshop', '90%']
-- leftList[1]= ['illustrator', '70%']
-- leftList[2]= ['indesign', '55%']
-- software.leftList= leftList
-- var rightList= []
-- rightList[0]= ['dreamweaver', '80%']
-- rightList[1]= ['after effects', '60%']
-- rightList[2]= ['html&css3', '90%']
-- software.rightList= rightList
+- let path = require('path');
+- let fs = require('fs');
+- let dataJson = JSON.parse(fs.readFileSync('./src/data.json'));
 
 html
   head
@@ -71,5 +13,5 @@ html
     link(rel="stylesheet" href="style.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   body
-    +cv(personObj, profile, contact, skills, education, experience, software)
+    +cv(dataJson)
     script(src="main.js")

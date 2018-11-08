@@ -6,5 +6,5 @@ mixin contact(contact)
         .contact__content
             each cont in contact.contacts
                 .contact__row
-                    .contact__name= cont[0]
-                    .contact__value= cont[1]
+                    .contact__name= cont.name
+                    .contact__value= cont.value

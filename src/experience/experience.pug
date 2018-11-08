@@ -1,9 +1,9 @@
 include ../unit/unit
 
-mixin experience(element)
+mixin experience(experience)
     .experience
         .experience__header
-            +header(element.icon, element.header)
+            +header(experience.icon, experience.header)
         .experience__content
-            each elem in element.list
+            each elem in experience.expList
                 +unit(elem, "")

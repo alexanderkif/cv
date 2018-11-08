@@ -7,21 +7,21 @@ include ../education/education
 include ../experience/experience
 include ../software/software
 
-mixin cv(personObj, profile, contact, skills, education, experience, software)
+mixin cv(dataJson)
     .cv
       .cv__left-column
         .cv__person
-          +person(personObj)
+          +person(dataJson.personObj)
         .cv__profile
-          +profile(profile)
+          +profile(dataJson.profile)
         .cv__contact
-          +contact(contact)
+          +contact(dataJson.contact)
         .cv__skills
-          +skills(skills)
+          +skills(dataJson.skills)
       .cv__right-column
         .cv__education
-          +education(education)
+          +education(dataJson.education)
         .cv__experience
-          +experience(experience)
+          +experience(dataJson.experience)
         .cv__software
-          +software(software)
+          +software(dataJson.software)

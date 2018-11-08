@@ -1,0 +1,145 @@
+{
+    "personObj" : {
+        "name":"name here",
+        "surname":"surname",
+        "profession":"graphic designer"
+    },
+    "profile" : {
+        "icon":"name here",
+        "header":"surname",
+        "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu ",
+        "textB":"pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum."
+    },
+    "contact" : {
+        "icon":"call",
+        "header":"contact",
+        "contacts":[
+            {
+                "name":"address",
+                "value":"Main Street, City."
+            },
+            {
+                "name":"email",
+                "value":"contact@domain.com"
+            },
+            {
+                "name":"phone",
+                "value":"555-555-555"
+            },
+            {
+                "name":"website",
+                "value":"www.yourweb.com"
+            }
+        ]
+    },
+    "skills" : {
+        "icon":"build",
+        "header":"skills",
+        "skillsList":[
+            {
+                "name":"creative",
+                "actives":9,
+                "elements":12
+            },
+            {
+                "name":"teamwork",
+                "actives":11,
+                "elements":12
+            },
+            {
+                "name":"innovate",
+                "actives":6,
+                "elements":12
+            },
+            {
+                "name":"communication",
+                "actives":11,
+                "elements":12
+            }
+        ]
+    },    
+    "education" : {
+        "icon":"star",
+        "header":"education",
+        "eduList":[
+            {
+                "header":"master degree",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"university name",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            },
+            {
+                "header":"master degree",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"university name",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            },
+            {
+                "header":"master degree",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"university name",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            },
+            {
+                "header":"master degree",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"university name",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            }
+        ]
+    },   
+    "experience" : {
+        "icon":"work",
+        "header":"experience",
+        "expList":[
+            {
+                "header":"company name",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"your job here",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            },
+            {
+                "header":"company name",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"your job here",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            },
+            {
+                "header":"company name",
+                "dates":"// Feb 2011 - Jun 2014",
+                "subheader":"your job here",
+                "text":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+            }
+        ]
+    },  
+    "software" : {
+        "icon":"computer",
+        "header":"software",
+        "softList":[
+            {
+                "name":"photoshop",
+                "value":"90%"
+            },
+            {
+                "name":"illustrator",
+                "value":"70%"
+            },
+            {
+                "name":"indesign",
+                "value":"55%"
+            },
+            {
+                "name":"dreamweaver",
+                "value":"80%"
+            },
+            {
+                "name":"after effects",
+                "value":"60%"
+            },
+            {
+                "name":"html&css3",
+                "value":"90%"
+            }
+        ]
+    }
+}
