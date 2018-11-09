@@ -121,20 +121,20 @@
                 "value":"90%"
             },
             {
-                "name":"illustrator",
-                "value":"70%"
-            },
-            {
-                "name":"indesign",
-                "value":"55%"
-            },
-            {
                 "name":"dreamweaver",
                 "value":"80%"
             },
             {
+                "name":"illustrator",
+                "value":"70%"
+            },
+            {
                 "name":"after effects",
                 "value":"60%"
+            },
+            {
+                "name":"indesign",
+                "value":"55%"
             },
             {
                 "name":"html&css3",

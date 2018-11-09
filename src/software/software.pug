@@ -5,12 +5,6 @@ mixin software(software)
       .software__header
           +header(software.icon, software.header)
       .software__content
-        - for (var x = 0; x < software.softList.length; x++)
-                if x < software.softList.length/2
-                  .software__left
-                      .software__bar
-                        +line-bar(software.softList[x])
-                else
-                  .software__right
-                      .software__bar
-                        +line-bar(software.softList[x])
+        each soft in software.softList
+          .software__bar
+            +line-bar(soft)
