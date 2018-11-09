@@ -328,24 +328,18 @@
   background-color: white; }
   .software__content {
     margin-top: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    justify-items: center; }
     @media screen and (max-width: 600px) {
       .software__content {
-        justify-content: center;
+        grid-template-columns: 1fr;
         padding-top: 20px; } }
   .software__bar {
     margin-left: 15px;
-    margin-bottom: 25px; }
-  .software__left, .software__right {
-    margin: 0;
-    margin-top: 20px;
-    width: 46%; }
-    @media screen and (max-width: 600px) {
-      .software__left, .software__right {
-        width: 90%;
-        margin-top: 0; } }
+    margin-bottom: 25px;
+    width: 90%; }
 
 html {
   font-family: 'Conv Myriad Pro'; }
