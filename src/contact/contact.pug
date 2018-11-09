@@ -1,10 +1,10 @@
 
-mixin contact(contact)
+mixin contact({icon, header, contacts})
     .contact
         .contact__header
-            +header(contact.icon, contact.header)
+            +header(icon, header)
         .contact__content
-            each cont in contact.contacts
+            each cont in contacts
                 .contact__row
                     .contact__name= cont.name
                     .contact__value= cont.value

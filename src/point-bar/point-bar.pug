@@ -1,9 +1,9 @@
-mixin point-bar(skill)
+mixin point-bar({name, actives, elements})
     .point-bar
-        .point-bar__name= skill.name
+        .point-bar__name= name
         .point-bar__scale
-            - for (var x = 0; x < skill.elements; x++)
-                if x < skill.actives
+            - for (var x = 0; x < elements; x++)
+                if x < actives
                     i(class="material-icons icons-size point-bar__circle point-bar__circle_active")= 'lens'
                 else
                     i(class="material-icons icons-size point-bar__circle point-bar__circle_passive")= 'lens'

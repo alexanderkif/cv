@@ -1,12 +1,12 @@
-mixin unit(elem, theme)
+mixin unit({header, dates, subheader, text}, theme)
     .unit
         .unit__point
             i(class="material-icons icons-size")= 'lens'
         .unit__header
             if theme=="highlighted"
-                .unit__header-text.unit__header-text_base-color= elem.header
+                .unit__header-text.unit__header-text_base-color= header
             else
-                .unit__header-text= elem.header
-            .unit__header-years= elem.dates
-        .unit__name= elem.subheader
-        .unit__text= elem.text
+                .unit__header-text= header
+            .unit__header-years= dates
+        .unit__name= subheader
+        .unit__text= text

@@ -1,9 +1,9 @@
 include ../unit/unit
 
-mixin education(education)
+mixin education({icon, header, eduList})
     .education
         .education__header
-            +header(education.icon, education.header)
+            +header(icon, header)
         .education__content
-            each elem in education.eduList
+            each elem in eduList
                 +unit(elem, "highlighted")

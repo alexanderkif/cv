@@ -1,8 +1,8 @@
-mixin person(personObj)
+mixin person({name, surname, profession})
     .person
         svg.person__photo(height="350" width="100%")
             circle.person__border-circle(r="130" cx="51%" cy="217" stroke="#056cb4" stroke-width="1" fill="white")
             circle.person__photo-circle(r="114" cx="51%" cy="217" fill="#056cb4")
-        .person__name= personObj.name
-        .person__surname= personObj.surname
-        .person__profession= personObj.profession
+        .person__name= name
+        .person__surname= surname
+        .person__profession= profession

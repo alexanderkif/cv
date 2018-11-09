@@ -1,10 +1,10 @@
 include ../point-bar/point-bar
 
-mixin skills(skills)
+mixin skills({icon, header, skillsList})
     .skills
         .skills__header
-            +header(skills.icon, skills.header)
+            +header(icon, header)
         .skills__content
-            each skill in skills.skillsList
+            each skill in skillsList
                 .skills__list
                     +point-bar(skill)

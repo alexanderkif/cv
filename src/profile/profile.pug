@@ -1,7 +1,7 @@
-mixin profile(profile)
+mixin profile({icon, header, text, textB})
     .profile
         .profile__header
-            +header(profile.icon, profile.header)
+            +header(icon, header)
         .profile__content
-            .profile__text= profile.text
-            .profile__text-b= profile.textB
+            .profile__text= text
+            .profile__text-b= textB

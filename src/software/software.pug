@@ -1,10 +1,10 @@
 include ..//line-bar/line-bar
 
-mixin software(software)
+mixin software({icon, header, softList})
     .software
       .software__header
-          +header(software.icon, software.header)
+          +header(icon, header)
       .software__content
-        each soft in software.softList
+        each soft in softList
           .software__bar
             +line-bar(soft)
