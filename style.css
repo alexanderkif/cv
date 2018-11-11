@@ -43,9 +43,9 @@
       .cv__education {
         padding-top: 50px; } }
   .cv__experience {
-    padding-top: 58px; }
+    padding-top: 45px; }
   .cv__software {
-    padding-top: 68px; }
+    padding-top: 45px; }
 
 .person {
   height: 590px;
@@ -218,13 +218,15 @@
   width: 100%;
   background-color: white; }
   .education__content {
-    margin-top: 30px;
-    margin-left: 5px; }
+    margin-top: 25px;
+    margin-left: 5px;
+    padding-inline-start: 0px; }
 
 .unit {
   width: 100%;
   margin-top: 10px;
-  position: relative; }
+  position: relative;
+  list-style-type: none; }
   .unit__point {
     position: absolute;
     top: 7px;
@@ -257,19 +259,22 @@
     margin-left: 55px;
     margin-top: 5px;
     font-weight: normal;
-    font-size: 17px; }
+    font-size: 17px;
+    margin-bottom: 11px; }
 
 .experience {
   width: 100%;
   background-color: white; }
   .experience__content {
     margin-top: 45px;
-    margin-left: 5px; }
+    margin-left: 5px;
+    padding-inline-start: 0px; }
 
 .unit {
   width: 100%;
   margin-top: 10px;
-  position: relative; }
+  position: relative;
+  list-style-type: none; }
   .unit__point {
     position: absolute;
     top: 7px;
@@ -302,7 +307,8 @@
     margin-left: 55px;
     margin-top: 5px;
     font-weight: normal;
-    font-size: 17px; }
+    font-size: 17px;
+    margin-bottom: 11px; }
 
 .line-bar__name {
   text-align: left;
@@ -327,7 +333,7 @@
   width: 100%;
   background-color: white; }
   .software__content {
-    margin-top: 5px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
