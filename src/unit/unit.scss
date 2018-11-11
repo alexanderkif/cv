@@ -2,6 +2,7 @@
     width: 100%;
     margin-top: 10px;
     position: relative;
+    list-style-type: none;
 
     &__point {
         position: absolute;
@@ -42,5 +43,6 @@
         margin-top: 5px;
         font-weight: normal;
         font-size: 17px;
+        margin-bottom: 11px;
     }    
 }

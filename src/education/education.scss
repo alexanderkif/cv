@@ -2,8 +2,9 @@
     width: 100%;
     background-color: $bg-color;
     &__content {
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 5px;
+        padding-inline-start: 0px;
     }
 }
 

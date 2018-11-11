@@ -3,5 +3,5 @@ mixin profile({icon, header, text, textB})
         .profile__header
             +header(icon, header)
         .profile__content
-            .profile__text= text
-            .profile__text-b= textB
+            p.profile__text= text
+                span.profile__text-b= textB

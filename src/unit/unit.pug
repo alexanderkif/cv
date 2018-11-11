@@ -1,5 +1,5 @@
 mixin unit({header, dates, subheader, text}, theme)
-    .unit
+    li.unit
         .unit__point
             i(class="material-icons icons-size")= 'lens'
         .unit__header
@@ -9,4 +9,4 @@ mixin unit({header, dates, subheader, text}, theme)
                 .unit__header-text= header
             .unit__header-years= dates
         .unit__name= subheader
-        .unit__text= text
+        p.unit__text= text
