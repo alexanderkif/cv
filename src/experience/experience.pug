@@ -4,6 +4,6 @@ mixin experience({icon, header, expList})
     .experience
         .experience__header
             +header(icon, header)
-        ul.experience__content
+        .experience__content
             each elem in expList
                 +unit(elem)

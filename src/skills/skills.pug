@@ -4,7 +4,7 @@ mixin skills({icon, header, skillsList})
     .skills
         .skills__header
             +header(icon, header)
-        .skills__content
+        ul.skills__content
             each skill in skillsList
-                .skills__list
+                li.skills__list
                     +point-bar(skill)

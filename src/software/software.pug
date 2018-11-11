@@ -4,7 +4,7 @@ mixin software({icon, header, softList})
     .software
       .software__header
           +header(icon, header)
-      .software__content
+      ul.software__content
         each soft in softList
-          .software__bar
+          li.software__bar
             +line-bar(soft)

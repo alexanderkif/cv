@@ -4,6 +4,6 @@ mixin education({icon, header, eduList})
     .education
         .education__header
             +header(icon, header)
-        ul.education__content
+        .education__content
             each elem in eduList
                 +unit(elem, "highlighted")

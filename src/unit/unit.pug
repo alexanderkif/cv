@@ -1,12 +1,12 @@
 mixin unit({header, dates, subheader, text}, theme)
-    li.unit
+    .unit
         .unit__point
             i(class="material-icons icons-size")= 'lens'
-        .unit__header
+        header.unit__header
             if theme=="highlighted"
                 .unit__header-text.unit__header-text_base-color= header
             else
                 .unit__header-text= header
             .unit__header-years= dates
         .unit__name= subheader
-        p.unit__text= text
+        article.unit__text= text

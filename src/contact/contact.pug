@@ -5,6 +5,6 @@ mixin contact({icon, header, contacts})
             +header(icon, header)
         .contact__content
             each cont in contacts
-                .contact__row
-                    .contact__name= cont.name
-                    .contact__value= cont.value
+                dl.contact__row
+                    dd.contact__name= cont.name
+                    dt.contact__value= cont.value

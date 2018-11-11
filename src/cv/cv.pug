@@ -8,20 +8,20 @@ include ../experience/experience
 include ../software/software
 
 mixin cv({personObj, profile, contact, skills, education, experience, software})
-    .cv
+    main.cv
       .cv__left-column
-        .cv__person
+        section.cv__person
           +person(personObj)
-        .cv__profile
+        section.cv__profile
           +profile(profile)
-        .cv__contact
+        section.cv__contact
           +contact(contact)
-        .cv__skills
+        section.cv__skills
           +skills(skills)
       .cv__right-column
-        .cv__education
+        section.cv__education
           +education(education)
-        .cv__experience
+        section.cv__experience
           +experience(experience)
-        .cv__software
+        section.cv__software
           +software(software)
