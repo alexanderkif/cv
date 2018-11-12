@@ -30,7 +30,7 @@
       .cv__right-column {
         flex-grow: 0.9; } }
   .cv__person {
-    padding-top: 0; }
+    padding-top: 84px; }
   .cv__profile {
     padding-top: 32px; }
   .cv__contact {
@@ -48,13 +48,30 @@
     padding-top: 45px; }
 
 .person {
-  height: 590px;
+  height: 490px;
   width: 100%;
   background-color: white;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 16px; }
+  .person__photo {
+    position: relative;
+    width: 228px;
+    height: 228px;
+    border-radius: 50%;
+    background-color: #056cb4;
+    margin: 0 auto; }
+    .person__photo::after {
+      position: absolute;
+      content: "";
+      top: -16px;
+      left: -16px;
+      width: 258px;
+      height: 258px;
+      border-radius: 50%;
+      border: 1px solid #056cb4; }
   .person__name {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 20px;
     height: 1em;
     font-size: 60px;
@@ -62,8 +79,7 @@
     letter-spacing: 2px;
     filter: blur(1px); }
   .person__surname {
-    position: relative;
-    top: -10px;
+    margin-top: -8px;
     height: 1em;
     font-size: 66px;
     font-weight: bold;
@@ -71,7 +87,7 @@
     background-color: #ffffff00;
     margin-left: 20px; }
   .person__profession {
-    margin-top: 10px;
+    margin-top: 18px;
     height: 1em;
     font-size: 26px;
     font-weight: bold;
@@ -79,46 +95,39 @@
     margin-left: 20px; }
 
 .header {
-  width: 100%;
+  padding-left: 15px;
   height: 78px;
-  display: table;
-  padding-left: 10px; }
-  .header__border-circle {
-    display: table-cell;
-    position: relative;
-    margin-left: 10px;
-    width: 76px;
-    min-width: 76px;
-    min-height: 76px;
-    border-radius: 50%;
-    border: 1px solid #056cb4;
-    background-color: white; }
-  .header__background-circle {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #056cb4; }
+  width: 100%;
+  display: flex;
+  position: relative; }
   .header__icon {
-    position: absolute;
-    top: -13px;
-    left: 10px;
+    display: inline-flex;
+    position: relative;
     width: 70px;
     height: 70px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 50%;
     color: white;
-    background-color: #ffffff00;
-    font-size: 50pt; }
+    background-color: #056cb4;
+    border: 0px; }
+    .header__icon::before {
+      content: "";
+      position: absolute;
+      width: 76px;
+      height: 76px;
+      margin-top: -4px;
+      margin-left: -4px;
+      border-radius: 50%;
+      border: 1px solid #056cb4; }
     .header__icon .icons-size {
       font-size: 50px;
-      margin-top: 26px;
-      margin-left: 4px; }
+      margin-top: 10px;
+      margin-left: 10px; }
   .header__label {
-    width: 20px;
-    display: table-cell;
+    display: inline-flex;
+    align-items: center;
     padding-left: 22px;
-    padding-top: 8px;
     font-size: 45px;
     font-weight: bold;
     background-color: #ffffff00;
@@ -126,10 +135,11 @@
     letter-spacing: 0px;
     text-transform: uppercase; }
   .header__line {
+    flex: 1;
+    align-items: center;
     margin-left: 10px;
     margin-right: 20px;
-    margin-top: 0px;
-    height: 15px;
+    margin-top: 37px;
     border-top: 5px solid #056cb4; }
 
 .profile {
