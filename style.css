@@ -259,11 +259,11 @@
     margin-top: 25px;
     margin-left: 5px;
     padding-inline-start: 0px; }
-    .education__content li {
-      position: relative;
-      list-style-type: none;
-      padding-inline-start: 0px;
-      margin-bottom: 11px; }
+  .education__item {
+    position: relative;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-bottom: 11px; }
 
 .experience {
   width: 100%;
@@ -272,11 +272,11 @@
     margin-top: 45px;
     margin-left: 5px;
     padding-inline-start: 0px; }
-    .experience__content li {
-      position: relative;
-      list-style-type: none;
-      padding-inline-start: 0px;
-      margin-bottom: 11px; }
+  .experience__item {
+    position: relative;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-bottom: 11px; }
 
 .line-bar__name {
   text-align: left;
