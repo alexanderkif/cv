@@ -1,12 +1,31 @@
 
 .person {
-    height: 590px;
+    height: 490px;
     width: 100%;
     background-color: $bg-color;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 16px;
+    &__photo {
+        position: relative;
+        width: 228px;
+        height: 228px;
+        border-radius: 50%;
+        background-color: $base-color;
+        margin: 0 auto;
+        &::after {
+            position: absolute;
+            content: "";
+            top: -16px;
+            left: -16px;
+            width: 258px;
+            height: 258px;
+            border-radius: 50%;
+            border: 1px solid $base-color;
+        }
+    }
     &__name {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 20px;
         height: 1em;
         font-size: 60px;
@@ -15,8 +34,7 @@
         filter: blur(1px);
     }
     &__surname {
-        position: relative;
-        top: -10px;
+        margin-top: -8px;
         height: 1em;
         font-size: 66px;
         font-weight: bold;
@@ -25,7 +43,7 @@
         margin-left: 20px;
     }
     &__profession {
-        margin-top: 10px;
+        margin-top: 18px;
         height: 1em;
         font-size: 26px;
         font-weight: bold;

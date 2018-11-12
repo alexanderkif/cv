@@ -1,49 +1,41 @@
 
 .header {
-    width: 100%;
+    padding-left: 15px;
     height: 78px;
-    display: table;
-    padding-left: 10px;
-    &__border-circle {
-        display: table-cell;
-        position: relative;
-        margin-left: 10px;
-        width: 76px;
-        min-width: 76px;
-        min-height: 76px;
-        border-radius: 50%;
-        border: 1px solid $base-color;
-        background-color: $bg-color;
-    }
-    &__background-circle {
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        width: 70px; 
-        height: 70px;
-        border-radius: 50%;
-        background-color: $base-color;
-    }
+    width: 100%;
+    display: flex;
+    position: relative;
     &__icon {
-        position: absolute;
-        top: -13px;
-        left: 10px;
+        display: inline-flex;
+        position: relative;
         width: 70px; 
         height: 70px;
+        margin-top: 4px;
+        margin-left: 4px;
+        border-radius: 50%;
         color: white;
-        background-color: #ffffff00;
-        font-size: 50pt;
+        background-color: $base-color;
+        border: 0px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 76px;
+            height: 76px;
+            margin-top: -4px;
+            margin-left: -4px;
+            border-radius: 50%;
+            border: 1px solid $base-color;
+        }
         .icons-size {
             font-size: 50px; 
-            margin-top: 26px; 
-            margin-left: 4px;
-          }
+            margin-top: 10px; 
+            margin-left: 10px;
+        }
     }
     &__label {
-        width: 20px;
-        display: table-cell;
+        display: inline-flex;
+        align-items: center;
         padding-left: 22px;
-        padding-top: 8px;
         font-size: 45px;
         font-weight: bold;
         background-color: #ffffff00;
@@ -52,10 +44,11 @@
         text-transform: uppercase;
     }
     &__line {
+        flex: 1;
+        align-items: center;
         margin-left: 10px;
         margin-right: 20px;
-        margin-top: 0px;
-        height: 15px;
+        margin-top: 37px;
         border-top: 5px solid $base-color;
     }
 }
