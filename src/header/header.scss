@@ -4,10 +4,7 @@
     height: 78px;
     width: 100%;
     display: flex;
-    position: relative;
     &__icon {
-        display: inline-flex;
-        position: relative;
         width: 70px; 
         height: 70px;
         margin-top: 4px;
@@ -35,20 +32,20 @@
     &__label {
         display: inline-flex;
         align-items: center;
+        flex-grow: 1;
         padding-left: 22px;
         font-size: 45px;
         font-weight: bold;
         background-color: #ffffff00;
         color: $base-color;
         letter-spacing: 0px;
-        text-transform: uppercase;
-    }
-    &__line {
-        flex: 1;
-        align-items: center;
-        margin-left: 10px;
-        margin-right: 20px;
-        margin-top: 37px;
-        border-top: 5px solid $base-color;
+        text-transform: uppercase;        
+        &::after {
+            content: "";
+            margin-left: 10px;
+            margin-right: 20px;
+            border-top: 5px solid $base-color;
+            width: 100%;
+        }
     }
 }
