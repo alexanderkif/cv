@@ -2,9 +2,9 @@ include ..//line-bar/line-bar
 
 mixin software({icon, header, softList})
     .software
-      .software__header
-          +header(icon, header)
-      ul.software__content
-        each soft in softList
-          li.software__bar
-            +line-bar(soft)
+        .software__header
+            +header(icon, header)
+        ul.software__content
+            each soft in softList
+                li.software__bar
+                    +line-bar(soft)

@@ -1,68 +1,71 @@
 
 .cv {
-  min-width: 430px;
-  max-width: 1255px;
-  font-size: 17px;
-  margin: 0 auto;
-  margin-top: 8px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  @media screen and (max-width: 900px) {
-    justify-content: center;
-    margin: 0;
-  }
-  
-  &__left-column {
-    min-width: 370px;
-    flex-basis: 39%;
-    background-color: $bg-color;
-    margin-bottom: 80px;
-    @media screen and (max-width: 900px) {
-      flex-grow: 0.9;
-      margin-bottom: 0px;
-    }
-  }
-  
-  &__right-column {
-    background-color: $bg-color;
     min-width: 430px;
-    flex-basis: 57%;
-    margin-bottom: 80px;
-    @media screen and (max-width: 900px) {
-      flex-grow: 0.9;
-    }
-  }
-  
-  &__person {
-    padding-top: 84px;
-  }
-  
-  &__profile {
-    padding-top: 32px;
-  }
-  
-  &__contact {
-    padding-top: 45px;
-  }
-  
-  &__skills {
-    padding-top: 25px;
-  }
-  
-  &__education {
-    padding-top: 78px;
-    @media screen and (max-width: 900px) {
-      padding-top: 50px;
-    }
-  }
+    max-width: 1255px;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-  &__experience {
-    padding-top: 35px;
-  }
-  
-  &__software {
-    padding-top: 35px;
-  }
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        margin: 0;
+    }
+    
+    &__left-column {
+        min-width: 370px;
+        flex-basis: 39%;
+        background-color: $bg-color;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 900px) {
+            flex-grow: 0.9;
+            margin-bottom: 0px;
+        }
+    }
+    
+    &__right-column {
+        background-color: $bg-color;
+        min-width: 430px;
+        flex-basis: 57%;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 900px) {
+            flex-grow: 0.9;
+        }
+    }
+    
+    &__person {
+        padding-top: 84px;
+    }
+    
+    &__profile {
+        padding-top: 32px;
+    }
+    
+    &__contact {
+        padding-top: 45px;
+    }
+    
+    &__skills {
+        padding-top: 25px;
+    }
+    
+    &__education {
+        padding-top: 78px;
+        
+        @media screen and (max-width: 900px) {
+            padding-top: 50px;
+        }
+    }
+
+    &__experience {
+        padding-top: 35px;
+    }
+    
+    &__software {
+        padding-top: 35px;
+    }
 }

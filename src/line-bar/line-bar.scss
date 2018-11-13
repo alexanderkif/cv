@@ -4,16 +4,19 @@
         font-size: 28px;
         text-transform: uppercase;
     }
+
     &__bar {
         margin-top: 10px;
         display: table;
         width: 100%;
         height: 25px;
     }
+
     &__bar-active {
         display: table-cell;
         background-color: #056cb4;
     }
+    
     &__bar-passive {
         display: table-cell;
         background-color: lightgray;

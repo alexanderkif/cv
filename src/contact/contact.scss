@@ -1,11 +1,13 @@
 .contact {
     width: 100%;
     background-color: $bg-color;
+
     &__content {
         width: 100%;
         margin-top: 15px;
         position: relative;
     }
+
     &__row {
         width: 100%;
         font-size: 24px;
@@ -13,6 +15,7 @@
         margin-bottom: 25px;
         margin-left: 15px;
     }
+
     &__name {
         margin-left: 0px;
         margin-top: 1px;
@@ -23,6 +26,7 @@
         text-transform: uppercase;
         width: 127px;
     }
+    
     &__value {
         display: inline-block;
         margin-left: 10px;

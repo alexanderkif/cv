@@ -9,19 +9,19 @@ include ../software/software
 
 mixin cv({personObj, profile, contact, skills, education, experience, software})
     main.cv
-      .cv__left-column
-        section.cv__person
-          +person(personObj)
-        section.cv__profile
-          +profile(profile)
-        section.cv__contact
-          +contact(contact)
-        section.cv__skills
-          +skills(skills)
-      .cv__right-column
-        section.cv__education
-          +education(education)
-        section.cv__experience
-          +experience(experience)
-        section.cv__software
-          +software(software)
+        .cv__left-column
+            section.cv__person
+                +person(personObj)
+            section.cv__profile
+                +profile(profile)
+            section.cv__contact
+                +contact(contact)
+            section.cv__skills
+                +skills(skills)
+        .cv__right-column
+            section.cv__education
+                +education(education)
+            section.cv__experience
+                +experience(experience)
+            section.cv__software
+                +software(software)

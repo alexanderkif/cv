@@ -4,6 +4,7 @@
     height: 78px;
     width: 100%;
     display: flex;
+
     &__icon {
         width: 70px; 
         height: 70px;
@@ -13,6 +14,7 @@
         color: white;
         background-color: $base-color;
         border: 0px;
+
         &::before {
             content: "";
             position: absolute;
@@ -23,12 +25,14 @@
             border-radius: 50%;
             border: 1px solid $base-color;
         }
+
         .icons-size {
             font-size: 50px; 
             margin-top: 10px; 
             margin-left: 10px;
         }
     }
+
     &__label {
         display: inline-flex;
         align-items: center;
@@ -39,7 +43,8 @@
         background-color: #ffffff00;
         color: $base-color;
         letter-spacing: 0px;
-        text-transform: uppercase;        
+        text-transform: uppercase;   
+             
         &::after {
             content: "";
             margin-left: 10px;

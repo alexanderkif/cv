@@ -3,6 +3,7 @@
 .software {
     width: 100%;
     background-color: $bg-color;
+    
     &__content {
         list-style-type: none;
         padding-inline-start: 0px;
@@ -11,11 +12,13 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
         justify-items: center;
+        
         @media screen and (max-width: 600px) {
             grid-template-columns: 1fr;
             padding-top: 20px;
         }
     }
+
     &__bar {
         margin-left: 15px;
         margin-bottom: 25px;
