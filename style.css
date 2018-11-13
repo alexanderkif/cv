@@ -43,9 +43,9 @@
       .cv__education {
         padding-top: 50px; } }
   .cv__experience {
-    padding-top: 45px; }
+    padding-top: 35px; }
   .cv__software {
-    padding-top: 45px; }
+    padding-top: 35px; }
 
 .person {
   height: 490px;
@@ -98,11 +98,8 @@
   padding-left: 15px;
   height: 78px;
   width: 100%;
-  display: flex;
-  position: relative; }
+  display: flex; }
   .header__icon {
-    display: inline-flex;
-    position: relative;
     width: 70px;
     height: 70px;
     margin-top: 4px;
@@ -127,6 +124,7 @@
   .header__label {
     display: inline-flex;
     align-items: center;
+    flex-grow: 1;
     padding-left: 22px;
     font-size: 45px;
     font-weight: bold;
@@ -134,13 +132,12 @@
     color: #056cb4;
     letter-spacing: 0px;
     text-transform: uppercase; }
-  .header__line {
-    flex: 1;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 37px;
-    border-top: 5px solid #056cb4; }
+    .header__label::after {
+      content: "";
+      margin-left: 10px;
+      margin-right: 20px;
+      border-top: 5px solid #056cb4;
+      width: 100%; }
 
 .profile {
   width: 100%;
