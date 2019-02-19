@@ -3,8 +3,6 @@
   min-width: 430px;
   max-width: 1255px;
   font-size: 17px;
-  margin: 0 auto;
-  margin-top: 8px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
@@ -328,7 +326,10 @@ html {
   font-family: 'Conv Myriad Pro'; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center; }
 
 @font-face {
   font-family: 'Conv Myriad Pro';
