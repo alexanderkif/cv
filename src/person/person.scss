@@ -1,16 +1,16 @@
 
 .person {
-    height: 490px;
+    height: 28.8rem;
     width: 100%;
     background-color: $bg-color;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 16px;
+    padding-top: 0.94rem;
 
     &__photo {
         position: relative;
-        width: 228px;
-        height: 228px;
+        width: 13.4rem;
+        height: 13.4rem;
         border-radius: 50%;
         background-color: $base-color;
         margin: 0 auto;
@@ -18,41 +18,40 @@
         &::after {
             position: absolute;
             content: "";
-            top: -16px;
-            left: -16px;
-            width: 258px;
-            height: 258px;
+            top: -0.94rem;
+            left: -0.94rem;
+            width: 15.2rem;
+            height: 15.2rem;
             border-radius: 50%;
-            border: 1px solid $base-color;
+            border: 0.06rem solid $base-color;
         }
     }
 
     &__name {
-        margin-top: 40px;
-        margin-left: 20px;
-        height: 1em;
-        font-size: 60px;
+        margin-top: 2.4rem;
+        margin-left: 1.2rem;
+        height: 3.53rem;
+        font-size: 3.53rem;
         font-weight: normal;
-        letter-spacing: 2px;
-        filter: blur(1px);
+        letter-spacing: 0.12rem;
+        filter: blur(0.06rem);
     }
 
     &__surname {
-        margin-top: -8px;
-        height: 1em;
-        font-size: 66px;
+        margin-top: -0.48rem;
+        height: 3.88rem;
+        font-size: 3.88rem;
         font-weight: bold;
-        letter-spacing: 3px;
+        letter-spacing: 0.18rem;
         background-color: #ffffff00;
-        margin-left: 20px;
+        margin-left: 1.2rem;
     }
     
     &__profession {
-        margin-top: 18px;
-        height: 1em;
-        font-size: 26px;
+        margin-top: 1.06rem;
+        font-size: 1.53rem;
         font-weight: bold;
-        letter-spacing: 1px;
-        margin-left: 20px;
+        letter-spacing: 0.06rem;
+        margin-left: 1.2rem;
     }
   }

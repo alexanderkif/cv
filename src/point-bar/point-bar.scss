@@ -1,31 +1,31 @@
 .point-bar {
     &__scale {
-        margin-left: 40px;
+        margin-left: 2.4rem;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: black;
-        letter-spacing: 0px;
-        margin: 8px auto;
+        letter-spacing: 0rem;
+        margin: 0.48rem auto;
         text-align: center;
-        font-size: 28px;
-        min-width: 340px;
+        font-size: 1.65rem;
+        min-width: 20rem;
     }
 
     &__name {
-        margin-left: 40px;
+        margin-left: 2.4rem;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: black;
-        letter-spacing: 0px;
-        margin: 8px auto;
-        margin-top: 17px;
+        letter-spacing: 0rem;
+        margin: 0.48rem auto;
+        margin-top: 1rem;
         text-align: center;
-        font-size: 28px;
+        font-size: 1.65rem;
         text-transform: uppercase;
     }
 
     &__circle {
-        margin: 0px 3px;
+        margin: 0rem 0.18rem;
 
         &_active {
             color: #056cb4;

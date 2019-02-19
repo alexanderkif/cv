@@ -13,12 +13,13 @@ $bg-color: white;
 @import "../software/software";
 
 html {    
-  font-family: 'Conv Myriad Pro';
+  font-family: 'Conv Myriad Pro';  
+  font-size: 17px;
 }
 
 body {
     margin: 0;
-    padding-top: 8px;
+    padding-top: 0.48rem;
     display: flex;
     justify-content: center;
 }

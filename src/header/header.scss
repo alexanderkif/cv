@@ -1,35 +1,35 @@
 
 .header {
-    padding-left: 15px;
-    height: 78px;
+    padding-left: 0.88rem;
+    height: 4.59rem;
     width: 100%;
     display: flex;
 
     &__icon {
-        width: 70px; 
-        height: 70px;
-        margin-top: 4px;
-        margin-left: 4px;
+        width: 4.18rem; 
+        height: 4.18rem;
+        margin-top: 0.24rem;
+        margin-left: 0.24rem;
         border-radius: 50%;
         color: white;
         background-color: $base-color;
-        border: 0px;
+        border: 0rem;
 
         &::before {
             content: "";
             position: absolute;
-            width: 76px;
-            height: 76px;
-            margin-top: -4px;
-            margin-left: -4px;
+            width: 4.47rem;
+            height: 4.47rem;
+            margin-top: -0.24rem;
+            margin-left: -0.24rem;
             border-radius: 50%;
-            border: 1px solid $base-color;
+            border: 0.06rem solid $base-color;
         }
 
         .icons-size {
-            font-size: 50px; 
-            margin-top: 10px; 
-            margin-left: 10px;
+            font-size: 3rem; 
+            margin-top: 0.6rem; 
+            margin-left: 0.6rem;
         }
     }
 
@@ -37,19 +37,19 @@
         display: inline-flex;
         align-items: center;
         flex-grow: 1;
-        padding-left: 22px;
-        font-size: 45px;
+        padding-left: 1.3rem;
+        font-size: 2.65rem;
         font-weight: bold;
         background-color: #ffffff00;
         color: $base-color;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
         text-transform: uppercase;   
              
         &::after {
             content: "";
-            margin-left: 10px;
-            margin-right: 20px;
-            border-top: 5px solid $base-color;
+            margin-left: 0.6rem;
+            margin-right: 1.2rem;
+            border-top: 0.3rem solid $base-color;
             width: 100%;
         }
     }
