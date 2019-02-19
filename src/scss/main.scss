@@ -18,6 +18,9 @@ html {
 
 body {
     margin: 0;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 @font-face {
