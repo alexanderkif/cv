@@ -16,18 +16,22 @@
         "contacts":[
             {
                 "name":"address",
+                "prefix": "http://maps.google.com/?q=",
                 "value":"Main Street, City."
             },
             {
                 "name":"email",
+                "prefix": "mailto:",
                 "value":"contact@domain.com"
             },
             {
                 "name":"phone",
+                "prefix": "tel:",
                 "value":"555-555-555"
             },
             {
                 "name":"website",
+                "prefix": "http://",
                 "value":"www.yourweb.com"
             }
         ]
