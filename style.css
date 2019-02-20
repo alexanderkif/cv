@@ -180,7 +180,8 @@
     margin-left: 0.6rem;
     font-weight: normal;
     color: black;
-    letter-spacing: 0rem; }
+    letter-spacing: 0rem;
+    text-decoration: none; }
 
 .point-bar__scale {
   margin-left: 2.4rem;
