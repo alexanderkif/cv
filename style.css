@@ -3,9 +3,11 @@
   min-width: 25.3rem;
   max-width: 73.8rem;
   font-size: 1rem;
+  text-align: start;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 0.48rem; }
   @media screen and (max-width: 52.9rem) {
     .cv {
       justify-content: center;
@@ -327,9 +329,8 @@ html {
 
 body {
   margin: 0;
-  padding-top: 0.48rem;
-  display: flex;
-  justify-content: center; }
+  text-align: center;
+  text-align: -webkit-center; }
 
 @font-face {
   font-family: 'Conv Myriad Pro';
