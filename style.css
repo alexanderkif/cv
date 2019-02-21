@@ -319,7 +319,7 @@
     width: 90%; }
 
 html {
-  font-family: 'Conv Myriad Pro';
+  font-family: 'Conv Myriad Pro', 'Calibri', 'Arial';
   font-size: 17px; }
 
 body {
@@ -340,3 +340,11 @@ body {
   src: local("\263A"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
   font-weight: bold;
   font-style: normal; }
+
+@font-face {
+  font-family: Calibri;
+  src: local("Calibri"); }
+
+@font-face {
+  font-family: Arial;
+  src: local("Arial"); }
