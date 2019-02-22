@@ -10,8 +10,7 @@
   padding-top: 0.48rem; }
   @media screen and (max-width: 52.9rem) {
     .cv {
-      grid-template-columns: 1fr;
-      margin: 0; } }
+      grid-template-columns: 1fr; } }
   .cv__left-column {
     min-width: 21.8rem;
     background-color: white;
