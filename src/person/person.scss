@@ -6,11 +6,12 @@
     text-align: center;
     text-transform: uppercase;
     padding-top: 0.94rem;
+    padding-left: 0.8rem;
 
     &__photo {
         position: relative;
-        width: 13.4rem;
-        height: 13.4rem;
+        width: 12.7rem;
+        height: 12.7rem;
         border-radius: 50%;
         background-color: $base-color;
         margin: 0 auto;
@@ -20,8 +21,8 @@
             content: "";
             top: -0.94rem;
             left: -0.94rem;
-            width: 15.2rem;
-            height: 15.2rem;
+            width: 14.4rem;
+            height: 14.4rem;
             border-radius: 50%;
             border: 0.06rem solid $base-color;
         }
@@ -29,29 +30,26 @@
 
     &__name {
         margin-top: 2.4rem;
-        margin-left: 1.2rem;
         height: 3.53rem;
         font-size: 3.53rem;
         font-weight: normal;
-        letter-spacing: 0.12rem;
+        letter-spacing: 0rem;
         filter: blur(0.06rem);
     }
 
     &__surname {
-        margin-top: -0.48rem;
+        margin-top: -0.75rem;
         height: 3.88rem;
         font-size: 3.88rem;
         font-weight: bold;
-        letter-spacing: 0.18rem;
+        letter-spacing: 0rem;
         background-color: #ffffff00;
-        margin-left: 1.2rem;
     }
     
     &__profession {
-        margin-top: 1.06rem;
+        margin-top: 0.9rem;
         font-size: 1.53rem;
         font-weight: bold;
-        letter-spacing: 0.06rem;
-        margin-left: 1.2rem;
+        letter-spacing: -0.02rem;
     }
   }

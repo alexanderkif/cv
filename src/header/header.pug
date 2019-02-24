@@ -2,4 +2,6 @@ mixin header(icon, header)
     header.header
         .header__icon
             i(class="material-icons icons-size")= icon
-        .header__label= header
+        .header__label
+            .header__text= header
+            .header__line

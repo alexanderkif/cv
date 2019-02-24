@@ -4,7 +4,7 @@
     &__point {
         position: absolute;
         top: 0.42rem;
-        left: 0.06rem;
+        left: 0.4rem;
         
         .icons-size {
             font-size: 1.65rem; 
@@ -12,12 +12,12 @@
     }
 
     &__header-text {
-        margin-left: 3.24rem;
+        margin-left: 3.1rem;
         margin-top: 0.06rem;
         display: inline-block;
         font-weight: bold;
         font-size: 1.8rem;
-        letter-spacing: 0rem;
+        letter-spacing: -0.11rem;
         text-transform: uppercase;
     }
 
@@ -27,17 +27,17 @@
 
     &__header-years {
         display: inline-block;
-        margin-left: 0.6rem;
+        margin-left: 0.7rem;
         font-weight: normal;
         font-size: 1.8rem;
-        letter-spacing: 0rem;
+        letter-spacing: -0.08rem;
     }
 
     &__name {
-        margin-left: 3.24rem;
+        margin-left: 3.03rem;
         font-weight: normal;
         font-size: 1.8rem;
-        letter-spacing: 0rem;
+        letter-spacing: -0.1rem;
         text-transform: uppercase;
     }
     
@@ -45,6 +45,6 @@
         margin-left: 3.24rem;
         margin-top: 0.3rem;
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 0.96rem;
     }    
 }

@@ -1,13 +1,15 @@
 
 .header {
-    padding-left: 0.88rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 4.59rem;
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 4.1rem 1fr;
+    grid-column-gap: 4%;
 
     &__icon {
-        width: 4.18rem; 
-        height: 4.18rem;
+        width: 4.1rem; 
+        height: 4.1rem;
         margin-top: 0.24rem;
         margin-left: 0.24rem;
         border-radius: 50%;
@@ -34,23 +36,23 @@
     }
 
     &__label {
-        display: inline-flex;
-        align-items: center;
-        flex-grow: 1;
-        padding-left: 1.3rem;
         font-size: 2.65rem;
         font-weight: bold;
         background-color: #ffffff00;
         color: $base-color;
-        letter-spacing: 0rem;
-        text-transform: uppercase;   
+        letter-spacing: -0.03rem;
+        text-transform: uppercase;
+        padding-top: 0.5rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 0%;
+    }
              
-        &::after {
-            content: "";
-            margin-left: 0.6rem;
-            margin-right: 1.2rem;
-            border-top: 0.3rem solid $base-color;
-            width: 100%;
-        }
+    &__line {
+        margin-left: 0.6rem;
+        margin-right: 1.2rem;
+        margin-top: 1.65rem;
+        border-top: 0.3rem solid $base-color;
+        width: 100%;
     }
 }

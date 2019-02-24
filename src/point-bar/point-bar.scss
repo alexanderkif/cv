@@ -1,31 +1,28 @@
 .point-bar {
     &__scale {
-        margin-left: 2.4rem;
+        margin-top: 0.2rem;
         font-weight: normal;
-        font-size: 1.8rem;
         color: black;
         letter-spacing: 0rem;
-        margin: 0.48rem auto;
         text-align: center;
         font-size: 1.65rem;
         min-width: 20rem;
     }
 
     &__name {
-        margin-left: 2.4rem;
         font-weight: normal;
         font-size: 1.8rem;
         color: black;
-        letter-spacing: 0rem;
-        margin: 0.48rem auto;
+        letter-spacing: -0.02rem;
         margin-top: 1rem;
+        padding-left: 0.5rem;
         text-align: center;
         font-size: 1.65rem;
         text-transform: uppercase;
     }
 
     &__circle {
-        margin: 0rem 0.18rem;
+        margin: 0rem 0.11rem;
 
         &_active {
             color: #056cb4;

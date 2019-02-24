@@ -20,7 +20,7 @@
                 "value":"Main Street, City."
             },
             {
-                "name":"email",
+                "name":"e-mail",
                 "prefix": "mailto:",
                 "value":"contact@domain.com"
             },
