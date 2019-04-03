@@ -1,7 +1,7 @@
 mixin unit({header, dates, subheader, text}, theme)
     .unit
         .unit__point
-            i(class="material-icons icons-size")= 'lens'
+            i(class="material-icons icons-size unit__material-point")= 'lens'
         header.unit__header
             if theme=="highlighted"
                 .unit__header-text.unit__header-text_base-color= header
