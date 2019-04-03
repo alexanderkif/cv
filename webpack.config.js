@@ -1,4 +1,3 @@
-// Webpack v4
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -60,20 +59,9 @@ module.exports = {
     new ExtractTextPlugin(
         {filename: 'style.css'}
     ),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   hash: true,
-    //   template: './src/index.html',
-    //   filename: 'index.html'
-    // })
     new HtmlWebpackPlugin({
       template: 'src/index.pug',
-      inject: false,
-      metadata: {
-        // available in index.pug under locals
-        // TODO: This doesn't work, and we need to figure out how to pass these via apply-loader
-        // title, server, baseUrl
-      }
+      inject: false
     })
   ]
 }
