@@ -7,4 +7,4 @@ mixin contact({icon, header, contacts})
             each cont in contacts
                 dl.contact__row
                     dd.contact__name= cont.name
-                    a.contact__value(href=`${cont.prefix}${cont.value}`)= cont.value
+                    a.contact__value(href=`${cont.value}` target="_blank" rel="noopener noreferrer")= cont.displayValue

@@ -16,23 +16,23 @@
         "contacts":[
             {
                 "name":"address",
-                "prefix": "http://maps.google.com/?q=",
-                "value":"Main Street, City."
+                "value": "http://maps.google.com/?q=Main Street, City.",
+                "displayValue":"Main Street, City."
             },
             {
                 "name":"e-mail",
-                "prefix": "mailto:",
-                "value":"contact@domain.com"
+                "value": "mailto:contact@domain.com",
+                "displayValue":"contact@domain.com"
             },
             {
                 "name":"phone",
-                "prefix": "tel:",
-                "value":"555-555-555"
+                "value": "tel:555-555-555",
+                "displayValue":"555-555-555"
             },
             {
                 "name":"website",
-                "prefix": "http://",
-                "value":"www.yourweb.com"
+                "value": "http://www.yourweb.com",
+                "displayValue":"www.yourweb.com"
             }
         ]
     },
