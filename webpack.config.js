@@ -60,8 +60,7 @@ module.exports = {
         {filename: 'style.css'}
     ),
     new HtmlWebpackPlugin({
-      template: 'src/index.pug',
-      inject: false
+      template: 'src/index.pug'
     })
   ]
 }
