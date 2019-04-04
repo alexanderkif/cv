@@ -14,10 +14,9 @@
     &__text {
         display: inline;
         font-weight: normal;
-    }
     
-    &__text-b {    
-        display: inline;
-        font-weight: bold;
+        &_b {
+            font-weight: bold;
+        }
     }
 }
