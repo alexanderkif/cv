@@ -315,17 +315,13 @@
 
 .line-bar__bar {
   margin-top: 0.6rem;
-  display: table;
-  width: 100%;
-  height: 1.53rem; }
-
-.line-bar__bar-active {
-  display: table-cell;
-  background-color: #056cb4; }
-
-.line-bar__bar-passive {
-  display: table-cell;
+  position: relative;
+  height: 1.53rem;
   background-color: lightgray; }
+
+.line-bar__bar_active {
+  height: inherit;
+  background-color: #056cb4; }
 
 .software {
   width: 100%;
