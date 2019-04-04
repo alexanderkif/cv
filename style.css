@@ -175,9 +175,8 @@
   .profile__text {
     display: inline;
     font-weight: normal; }
-  .profile__text-b {
-    display: inline;
-    font-weight: bold; }
+    .profile__text_b {
+      font-weight: bold; }
 
 .contact {
   width: 100%;
