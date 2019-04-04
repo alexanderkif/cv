@@ -2,5 +2,4 @@ mixin line-bar({name, value})
     .line-bar
         .line-bar__name= name
         .line-bar__bar
-            div(class="line-bar__bar-active" style=`width: ${value}`)
-            .line-bar__bar-passive
+            .line-bar__bar_active(style=`width: ${value}`)

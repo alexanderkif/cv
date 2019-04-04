@@ -7,18 +7,13 @@
 
     &__bar {
         margin-top: 0.6rem;
-        display: table;
-        width: 100%;
+        position: relative;
         height: 1.53rem;
+        background-color: lightgray;
     }
 
-    &__bar-active {
-        display: table-cell;
+    &__bar_active {
+        height: inherit;
         background-color: #056cb4;
-    }
-    
-    &__bar-passive {
-        display: table-cell;
-        background-color: lightgray;
     }
 }
