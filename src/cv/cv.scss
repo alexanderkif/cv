@@ -7,7 +7,6 @@
     display: grid;
     grid-gap: 2.6rem;
     grid-template-columns: 37fr 56fr;
-    padding-top: 0.48rem;
 
     @media screen and (max-width: 52.9rem) {
         grid-template-columns: 1fr;
@@ -33,7 +32,8 @@
     }
     
     &__person {
-        padding-top: 5rem;
+        padding-top: 5.9rem;
+        padding-left: 1.5rem;
     }
     
     &__profile {
