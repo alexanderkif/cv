@@ -74,7 +74,6 @@
 
 .person {
   height: 28.8rem;
-  width: 100%;
   background-color: white;
   text-align: center;
   text-transform: uppercase; }
@@ -162,7 +161,6 @@
     width: 100%; }
 
 .profile {
-  width: 100%;
   background-color: white; }
   .profile__content {
     margin-left: 1rem;
@@ -177,7 +175,6 @@
       font-weight: bold; }
 
 .contact {
-  width: 100%;
   background-color: white; }
   .contact__content {
     width: 100%;
@@ -234,7 +231,6 @@
     color: lightgray; }
 
 .skills {
-  width: 100%;
   background-color: white; }
   .skills__content {
     width: 100%;
@@ -244,44 +240,46 @@
     list-style-type: none;
     padding-inline-start: 0rem; }
 
-.unit {
-  width: 100%; }
-  .unit__point {
-    position: absolute;
-    top: 0.42rem;
-    left: 0.4rem; }
-    .unit__point .icons-size {
-      font-size: 1.65rem; }
-  .unit__header-text {
-    margin-left: 3.1rem;
-    margin-top: 0.06rem;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.8rem;
-    letter-spacing: -0.11rem;
-    text-transform: uppercase; }
-  .unit__header-text_base-color {
-    color: #056cb4; }
-  .unit__header-years {
-    display: inline-block;
-    margin-left: 0.7rem;
-    font-weight: normal;
-    font-size: 1.8rem;
-    letter-spacing: -0.08rem; }
-  .unit__name {
-    margin-left: 3.03rem;
-    font-weight: normal;
-    font-size: 1.8rem;
-    letter-spacing: -0.1rem;
-    text-transform: uppercase; }
-  .unit__text {
-    margin-left: 3.24rem;
-    margin-top: 0.3rem;
-    font-weight: normal;
-    font-size: 0.96rem; }
+.unit__point {
+  position: absolute;
+  top: 0.42rem;
+  left: 0.4rem; }
+  .unit__point .icons-size {
+    font-size: 1.65rem; }
+
+.unit__header-text {
+  margin-left: 3.1rem;
+  margin-top: 0.06rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: -0.11rem;
+  text-transform: uppercase; }
+
+.unit__header-text_base-color {
+  color: #056cb4; }
+
+.unit__header-years {
+  display: inline-block;
+  margin-left: 0.7rem;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: -0.08rem; }
+
+.unit__name {
+  margin-left: 3.03rem;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase; }
+
+.unit__text {
+  margin-left: 3.24rem;
+  margin-top: 0.3rem;
+  font-weight: normal;
+  font-size: 0.96rem; }
 
 .education {
-  width: 100%;
   background-color: white; }
   .education__content {
     margin-top: 1.4rem;
@@ -294,7 +292,6 @@
     margin-bottom: 0.3rem; }
 
 .experience {
-  width: 100%;
   background-color: white; }
   .experience__content {
     margin-top: 2.4rem;
@@ -322,7 +319,6 @@
   background-color: #056cb4; }
 
 .software {
-  width: 100%;
   background-color: white; }
   .software__content {
     list-style-type: none;
