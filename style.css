@@ -35,8 +35,7 @@
   text-align: start;
   display: grid;
   grid-gap: 2.6rem;
-  grid-template-columns: 37fr 56fr;
-  padding-top: 0.48rem; }
+  grid-template-columns: 37fr 56fr; }
   @media screen and (max-width: 52.9rem) {
     .cv {
       grid-template-columns: 1fr; } }
@@ -55,7 +54,8 @@
     padding-left: 0.7rem;
     padding-right: 1.3rem; }
   .cv__person {
-    padding-top: 5rem; }
+    padding-top: 5.9rem;
+    padding-left: 1.5rem; }
   .cv__profile {
     padding-top: 0.4rem; }
   .cv__contact {
@@ -77,9 +77,7 @@
   width: 100%;
   background-color: white;
   text-align: center;
-  text-transform: uppercase;
-  padding-top: 0.94rem;
-  padding-left: 0.8rem; }
+  text-transform: uppercase; }
   .person__photo {
     position: relative;
     width: 12.7rem;
@@ -350,7 +348,8 @@ html {
 body {
   margin: 0;
   text-align: center;
-  text-align: -webkit-center; }
+  text-align: -webkit-center;
+  padding-top: 0.48rem; }
 
 @font-face {
   font-family: 'Conv Myriad Pro';
