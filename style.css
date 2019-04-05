@@ -171,7 +171,7 @@
   .profile__text {
     display: inline;
     font-weight: normal; }
-    .profile__text_b {
+    .profile__text_bold {
       font-weight: bold; }
 
 .contact {
@@ -314,7 +314,7 @@
   height: 1.53rem;
   background-color: lightgray; }
 
-.line-bar__bar_active {
+.line-bar__progress {
   height: inherit;
   background-color: #056cb4; }
 
