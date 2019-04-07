@@ -1,19 +1,3 @@
-$base-color: #056cb4;
-$bg-color: white;
-
-$material-icons-font-path: '~material-icons/iconfont/';
- 
-@import '~material-icons/iconfont/material-icons.scss';
-@import "../cv/cv";
-@import "../person/person";
-@import "../header/header";
-@import "../profile/profile";
-@import "../contact/contact";
-@import "../skills/skills";
-@import "../unit/unit";
-@import "../education/education";
-@import "../experience/experience";
-@import "../software/software";
 
 html {
   font-family: 'Conv Myriad Pro', 'Calibri', 'Arial', sans-serif;
