@@ -171,7 +171,7 @@
   .profile__text {
     display: inline;
     font-weight: normal; }
-    .profile__text_bold {
+    .profile__text_font-weight_bold {
       font-weight: bold; }
 
 .contact {
