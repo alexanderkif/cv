@@ -1,6 +1,5 @@
 
-$base-color: #056cb4;
-$bg-color: white;
+@import "../scss/constants.scss";
 
 .software {
     background-color: $bg-color;

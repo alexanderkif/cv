@@ -1,5 +1,4 @@
 
-
 import './img/favicon.ico';
 
-require.context('./', true, /\.scss$/);
+require.context('./', true, /(?!constants)\.scss$/);
