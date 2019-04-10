@@ -1,44 +1,29 @@
-.profile {
-  background-color: white; }
-  .profile__content {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    line-height: 1.15rem;
-    position: relative;
-    font-size: 0.98rem; }
-  .profile__text {
-    display: inline;
-    font-weight: normal; }
-    .profile__text_font-weight_bold {
-      font-weight: bold; }
-.contact {
-  background-color: white; }
-  .contact__content {
-    width: 100%;
-    margin-top: 1.8rem;
-    position: relative; }
-  .contact__row {
-    width: 100%;
-    font-size: 1.41rem;
-    margin-top: 0rem;
-    margin-bottom: 1.6rem;
-    margin-left: 0.88rem; }
-  .contact__name {
-    margin-left: 0rem;
-    margin-top: 0.06rem;
-    display: inline-block;
-    font-weight: bold;
-    color: #056cb4;
-    letter-spacing: -0.07rem;
-    text-transform: uppercase;
-    width: 7.47rem; }
-  .contact__value {
-    display: inline-block;
-    margin-left: 0.6rem;
-    font-weight: normal;
-    color: black;
-    letter-spacing: -0.06rem;
-    text-decoration: none; }
+.point-bar__scale {
+  margin-top: 0.2rem;
+  font-weight: normal;
+  color: black;
+  letter-spacing: 0rem;
+  text-align: center;
+  font-size: 1.65rem;
+  min-width: 20rem; }
+
+.point-bar__name {
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: black;
+  letter-spacing: -0.02rem;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  font-size: 1.65rem;
+  text-transform: uppercase; }
+
+.point-bar__circle {
+  margin: 0rem 0.11rem; }
+  .point-bar__circle_active {
+    color: #056cb4; }
+  .point-bar__circle_passive {
+    color: lightgray; }
 .education {
   background-color: white; }
   .education__content {
@@ -50,6 +35,49 @@
     list-style-type: none;
     padding-inline-start: 0rem;
     margin-bottom: 0.3rem; }
+.cv {
+  min-width: 25.3rem;
+  max-width: 73.8rem;
+  font-size: 1rem;
+  text-align: start;
+  display: grid;
+  grid-gap: 2.6rem;
+  grid-template-columns: 37fr 56fr; }
+  @media screen and (max-width: 52.9rem) {
+    .cv {
+      grid-template-columns: 1fr; } }
+  .cv__left-column {
+    min-width: 21.8rem;
+    background-color: white;
+    margin-bottom: 4.7rem;
+    padding-left: 1rem; }
+    @media screen and (max-width: 52.9rem) {
+      .cv__left-column {
+        margin-bottom: 0rem; } }
+  .cv__right-column {
+    background-color: white;
+    min-width: 25.3rem;
+    margin-bottom: 4.7rem;
+    padding-left: 0.7rem;
+    padding-right: 1.3rem; }
+  .cv__person {
+    padding-top: 5.9rem;
+    padding-left: 1.5rem; }
+  .cv__profile {
+    padding-top: 0.4rem; }
+  .cv__contact {
+    padding-top: 2.9rem; }
+  .cv__skills {
+    padding-top: 1.1rem; }
+  .cv__education {
+    padding-top: 4.2rem; }
+    @media screen and (max-width: 52.9rem) {
+      .cv__education {
+        padding-top: 2.94rem; } }
+  .cv__experience {
+    padding-top: 2rem; }
+  .cv__software {
+    padding-top: 2.05rem; }
 .line-bar__name {
   text-align: left;
   font-size: 1.65rem;
@@ -64,17 +92,6 @@
 .line-bar__progress {
   height: inherit;
   background-color: #056cb4; }
-.experience {
-  background-color: white; }
-  .experience__content {
-    margin-top: 2.4rem;
-    margin-left: 1.14rem;
-    padding-inline-start: 0rem; }
-  .experience__item {
-    position: relative;
-    list-style-type: none;
-    padding-inline-start: 0rem;
-    margin-bottom: 0.3rem; }
 .header {
   height: 4.59rem;
   display: grid;
@@ -121,6 +138,58 @@
     margin-top: 1.65rem;
     border-top: 0.3rem solid #056cb4;
     width: 100%; }
+.experience {
+  background-color: white; }
+  .experience__content {
+    margin-top: 2.4rem;
+    margin-left: 1.14rem;
+    padding-inline-start: 0rem; }
+  .experience__item {
+    position: relative;
+    list-style-type: none;
+    padding-inline-start: 0rem;
+    margin-bottom: 0.3rem; }
+.profile {
+  background-color: white; }
+  .profile__content {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.15rem;
+    position: relative;
+    font-size: 0.98rem; }
+  .profile__text {
+    display: inline;
+    font-weight: normal; }
+    .profile__text_display_bold {
+      font-weight: bold; }
+.contact {
+  background-color: white; }
+  .contact__content {
+    width: 100%;
+    margin-top: 1.8rem;
+    position: relative; }
+  .contact__row {
+    width: 100%;
+    font-size: 1.41rem;
+    margin-top: 0rem;
+    margin-bottom: 1.6rem;
+    margin-left: 0.88rem; }
+  .contact__name {
+    margin-left: 0rem;
+    margin-top: 0.06rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #056cb4;
+    letter-spacing: -0.07rem;
+    text-transform: uppercase;
+    width: 7.47rem; }
+  .contact__value {
+    display: inline-block;
+    margin-left: 0.6rem;
+    font-weight: normal;
+    color: black;
+    letter-spacing: -0.06rem;
+    text-decoration: none; }
 .person {
   height: 28.8rem;
   background-color: white;
@@ -161,75 +230,6 @@
     font-size: 1.53rem;
     font-weight: bold;
     letter-spacing: -0.02rem; }
-.cv {
-  min-width: 25.3rem;
-  max-width: 73.8rem;
-  font-size: 1rem;
-  text-align: start;
-  display: grid;
-  grid-gap: 2.6rem;
-  grid-template-columns: 37fr 56fr; }
-  @media screen and (max-width: 52.9rem) {
-    .cv {
-      grid-template-columns: 1fr; } }
-  .cv__left-column {
-    min-width: 21.8rem;
-    background-color: white;
-    margin-bottom: 4.7rem;
-    padding-left: 1rem; }
-    @media screen and (max-width: 52.9rem) {
-      .cv__left-column {
-        margin-bottom: 0rem; } }
-  .cv__right-column {
-    background-color: white;
-    min-width: 25.3rem;
-    margin-bottom: 4.7rem;
-    padding-left: 0.7rem;
-    padding-right: 1.3rem; }
-  .cv__person {
-    padding-top: 5.9rem;
-    padding-left: 1.5rem; }
-  .cv__profile {
-    padding-top: 0.4rem; }
-  .cv__contact {
-    padding-top: 2.9rem; }
-  .cv__skills {
-    padding-top: 1.1rem; }
-  .cv__education {
-    padding-top: 4.2rem; }
-    @media screen and (max-width: 52.9rem) {
-      .cv__education {
-        padding-top: 2.94rem; } }
-  .cv__experience {
-    padding-top: 2rem; }
-  .cv__software {
-    padding-top: 2.05rem; }
-.point-bar__scale {
-  margin-top: 0.2rem;
-  font-weight: normal;
-  color: black;
-  letter-spacing: 0rem;
-  text-align: center;
-  font-size: 1.65rem;
-  min-width: 20rem; }
-
-.point-bar__name {
-  font-weight: normal;
-  font-size: 1.8rem;
-  color: black;
-  letter-spacing: -0.02rem;
-  margin-top: 1rem;
-  padding-left: 0.5rem;
-  text-align: center;
-  font-size: 1.65rem;
-  text-transform: uppercase; }
-
-.point-bar__circle {
-  margin: 0rem 0.11rem; }
-  .point-bar__circle_active {
-    color: #056cb4; }
-  .point-bar__circle_passive {
-    color: lightgray; }
 .skills {
   background-color: white; }
   .skills__content {
